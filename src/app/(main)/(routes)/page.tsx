@@ -10,15 +10,7 @@ type Props = {};
 
 const Home = function ({}: Props) {
     const connectWallet = async function () {
-        const lucid = await Lucid.new(
-            new Blockfrost(
-                "https://cardano-preview.blockfrost.io/api/v0",
-                process.env.BLOCKFROST_PROJECT_ID_SECRET!,
-            ),
-            "Preview",
-        );
-        const api = await window.cardano.etherum.enable();
-        lucid.selectWallet(api);
+        const api = await window.cardano.nami.enable();
     };
     return <button onClick={connectWallet}>Connect Wallet</button>;
 };

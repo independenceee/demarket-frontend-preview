@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    width: 382px;
+    height: 361px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: lightgray 0px -43.254px / 100% 165.899% no-repeat;
+}
