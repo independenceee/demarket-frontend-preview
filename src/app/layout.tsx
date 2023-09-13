@@ -1,6 +1,7 @@
 import "./globals.scss";
-import React, { ReactNode } from "react";
 import type { Metadata } from "next";
+import React, { ReactNode } from "react";
+import ContextProvider from "@/contexts";
 import { Open_Sans } from "next/font/google";
 
 const font = Open_Sans({ subsets: ["latin"] });
@@ -16,7 +17,9 @@ type Props = {
 const RootLayout = function ({ children }: Props) {
     return (
         <html lang="en">
-            <body className={font.className}>{children}</body>
+            <body className={font.className}>
+                <ContextProvider>{children}</ContextProvider>
+            </body>
         </html>
     );
 };

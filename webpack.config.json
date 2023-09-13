@@ -1,0 +1,7 @@
+{
+    "experiments": {
+        "asyncWebAssembly": true,
+        "topLevelAwait": true,
+        "layers": true
+    }
+}
