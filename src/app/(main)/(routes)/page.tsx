@@ -3,16 +3,15 @@
 import React from "react";
 import classNames from "classnames/bind";
 import styles from "./page.module.scss";
-import { Blockfrost, Lucid } from "lucid-cardano";
-const cx = classNames.bind(styles);
 
+const cx = classNames.bind(styles);
+const WalletButton = React.lazy(
+    () => import("../../../components/Wallet/Wallet"),
+);
 type Props = {};
 
 const Home = function ({}: Props) {
-    const connectWallet = async function () {
-        const api = await window.cardano.nami.enable();
-    };
-    return <button onClick={connectWallet}>Connect Wallet</button>;
+    return <WalletButton />;
 };
 
 export default Home;
