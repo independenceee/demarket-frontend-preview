@@ -2,11 +2,11 @@
 
 import React from "react";
 import classNames from "classnames/bind";
-import styles from "./page.module.scss";
+import styles from "./Home.module.scss";
 
 const cx = classNames.bind(styles);
 const WalletButton = React.lazy(
-    () => import("../../../components/Wallet/Wallet"),
+    () => import("@/components/Wallet/Wallet"),
 );
 type Props = {};
 

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { ReactNode } from "react";
 import classNames from "classnames/bind";
 import Link from "next/link";
@@ -7,20 +9,20 @@ import { IconType } from "react-icons";
 const cx = classNames.bind(styles);
 
 type Props = {
-    to: string;
-    href: string;
-    primary: boolean;
-    outline: boolean;
-    text: boolean;
-    rounded: boolean;
-    disabled: boolean;
-    small: boolean;
-    large: boolean;
-    children: ReactNode;
-    className: string;
-    LeftIcon: IconType;
-    RightIcon: IconType;
-    onClick: () => any;
+    to?: string;
+    href?: string;
+    primary?: boolean;
+    outline?: boolean;
+    text?: boolean;
+    rounded?: boolean;
+    disabled?: boolean;
+    small?: boolean;
+    large?: boolean;
+    children?: ReactNode;
+    className?: any;
+    LeftIcon?: IconType;
+    RightIcon?: IconType;
+    onClick?: () => any;
 };
 
 function Button({
@@ -63,7 +65,7 @@ function Button({
         Component = "a";
     }
 
-    const classes = cx("wrapper", {
+    const classes: any = cx("wrapper", {
         [className]: className,
         primary,
         outline,

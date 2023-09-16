@@ -3,6 +3,9 @@ import classNames from "classnames/bind";
 import styles from "./page.module.scss";
 import Upload from "@/components/Upload";
 import NftItem from "@/components/NftItem";
+import Heading from "@/components/Heading";
+import Input from "@/components/Input";
+import TextArea from "@/components/TextArea";
 const cx = classNames.bind(styles);
 
 type Props = {};
@@ -15,9 +18,15 @@ const Mint = function ({}: Props) {
                 <div className={cx("inner")}>
                     <section className={cx("form")}>
                         <Upload />
+                        <Input label="Title" placeholder="Title of your item" />
+                        <TextArea
+                            label="Description"
+                            placeholder="Description  of your item"
+                        />
                     </section>
                     <section className={cx("revirew")}>
-                        <NftItem  />
+                        <Heading title="Preview" />
+                        <NftItem />
                     </section>
                 </div>
             </div>

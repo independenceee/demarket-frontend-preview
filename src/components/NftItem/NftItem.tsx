@@ -15,7 +15,9 @@ type Props = {
 const NftItem = function ({ title, description, imageUrl, type }: Props) {
     return (
         <div className={cx("wrapper")}>
-            <img src={imageUrl} alt="Image Url" className={cx("image")} />
+            <div className={cx("image-container")}>
+                <img src={imageUrl} alt="Image Url" className={cx("image")} />
+            </div>
             <div className={cx("container")}>
                 <section className={cx("content")}>
                     <div className={cx("title")}>{title}</div>
