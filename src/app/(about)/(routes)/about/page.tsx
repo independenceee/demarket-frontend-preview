@@ -6,6 +6,7 @@ import Background from "@/components/Background";
 import images from "@/assets/images";
 import Founder from "@/components/Founder";
 import styles from "./About.module.scss";
+import Reviews from "@/components/Reviews";
 
 const cx = classNames.bind(styles);
 
@@ -58,7 +59,9 @@ const About = function ({}: Props) {
                 </section>
 
                 {/*  */}
-                <section></section>
+                <section>
+                    <Reviews />
+                </section>
 
                 <section className={cx("founder-wrapper")}>
                     <Heading

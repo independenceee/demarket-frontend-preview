@@ -1,24 +1,25 @@
 "use client";
-
-import React, { ChangeEvent, useState } from "react";
-import Image from "next/image";
+import React, { ReactNode } from "react";
 import classNames from "classnames/bind";
-import { AiOutlineCloudUpload } from "react-icons/ai";
 
 import Button from "@/components/Button";
 import styles from "./Upload.module.scss";
 
 const cx = classNames.bind(styles);
 
-type Props = { title: string; type: string };
+type Props = {
+    title: string;
+    type: string;
+    children: ReactNode;
+};
 
-const Upload = function ({ title, type }: Props) {
+const Upload = function ({ title, type, children }: Props) {
     return (
         <div className={cx("wrapper")}>
             <h3 className={cx("title")}>{title}</h3>
             <div className={cx("container")}>
-                <p className={cx("type")}>{type}</p>
-                <Button>Upload</Button>
+                {type && <p className={cx("type")}>{type}</p>}
+                <Button className={cx("button")}>{children}</Button>
             </div>
         </div>
     );

@@ -1,15 +1,26 @@
 .wrapper {
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-width: 100px;
-    padding: 9px 16px;
-    border-radius: 4px;
-    font-size: 1.6rem;
+    padding: 8px 16px;
+    font-size: 14px;
     font-weight: 700;
     font-family: var(--font-family);
     cursor: pointer;
-    background-color: var(--white);
+    color: #fff;
+    border-radius: 30px;
+    background: var(
+        --gradient-purple-to-light,
+        linear-gradient(
+            90deg,
+            #2400ff -22.36%,
+            rgba(92, 0, 241, 0.85) 39.25%,
+            rgba(112, 0, 255, 0.7) 68.73%,
+            rgba(173, 0, 255, 0.55) 129.76%
+        )
+    );
     border: 1px solid transparent;
     user-select: none;
 
@@ -47,8 +58,17 @@
 }
 
 .primary {
-    color: var(--white);
-    background-color: var(--primary);
+    color: #fff;
+    background: var(
+        --gradient-purple-to-light,
+        linear-gradient(
+            90deg,
+            #2400ff -22.36%,
+            rgba(92, 0, 241, 0.85) 39.25%,
+            rgba(112, 0, 255, 0.7) 68.73%,
+            rgba(173, 0, 255, 0.55) 129.76%
+        )
+    );
     border-color: var(--primary);
 
     &:hover {

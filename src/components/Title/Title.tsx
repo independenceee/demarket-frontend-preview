@@ -1,8 +1,11 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+    main: string;
+    slug: string;
+};
 
-const Title = function ({}: Props) {
+const Title = function ({ main, slug }: Props) {
     return <div></div>;
 };
 

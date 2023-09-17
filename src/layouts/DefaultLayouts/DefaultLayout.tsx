@@ -6,7 +6,12 @@ type Props = {
 };
 
 const DefaultLayout = function ({ children }: Props) {
-    return <main>{children}</main>;
+    return (
+        <main>
+            {children}
+            <Footer />
+        </main>
+    );
 };
 
 export default DefaultLayout;

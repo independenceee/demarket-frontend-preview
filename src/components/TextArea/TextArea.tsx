@@ -16,7 +16,7 @@ const Input = function ({ label, placeholder }: Props) {
             <textarea
                 className={cx("control")}
                 typeof="text"
-                rows={30}
+                rows={15}
                 placeholder={placeholder}
             />
         </div>

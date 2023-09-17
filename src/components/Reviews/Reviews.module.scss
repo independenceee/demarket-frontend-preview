@@ -1,0 +1,38 @@
+.wrapper {
+    background: #f8fafd;
+    padding: 50px 10%;
+    margin: 0 10px;
+    border: 10px;
+
+    .container {
+        .reviews {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .review {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                h2 {
+                    color: #8f04a6;
+                    text-align: center;
+                    font-size: 64px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #8f04a6;
+                    text-align: center;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

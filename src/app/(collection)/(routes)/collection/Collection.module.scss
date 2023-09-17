@@ -1,0 +1,53 @@
+.wrapper {
+    padding: 90px 50px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            flex: 1;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            padding-right: 50px;
+            gap: 26px;
+            .header {
+                font-size: 46px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 46px;
+
+                background: var(
+                    --linear-purpletoblue,
+                    linear-gradient(
+                        90deg,
+                        #8f04a6 0%,
+                        #c0f 0%,
+                        #7000ff 39.36%,
+                        rgba(44, 0, 219, 0.91) 63.12%,
+                        rgba(4, 0, 203, 0.89) 79.64%,
+                        #1400ff 99.32%
+                    )
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .right {
+            margin-top: 100px;
+        }
+    }
+
+    .button-container {
+        text-align: center;
+        margin-top: 30px;
+
+        .button {
+            max-width: 200px;
+            padding: 9px 40px;
+        }
+    }
+}

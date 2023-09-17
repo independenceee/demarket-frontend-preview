@@ -1,19 +1,13 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import classNames from "classnames/bind";
+import { GrAddCircle } from "react-icons/gr";
+import Upload from "@/components/Upload";
+import TextArea from "@/components/TextArea";
+import Input from "@/components/Input";
 import styles from "./Collection.module.scss";
-import images from "@/assets/images";
-import {
-    AiFillStar,
-    AiOutlineFacebook,
-    AiOutlineGithub,
-    AiOutlineLinkedin,
-    AiOutlineStar,
-} from "react-icons/ai";
+import CollectionItem from "@/components/Collection";
 import Button from "@/components/Button";
-import Heading from "@/components/Heading";
 
 const cx = classNames.bind(styles);
 
@@ -23,8 +17,37 @@ const Collection = function ({}: Props) {
     return (
         <main className={cx("wrapper")}>
             <div className={cx("container")}>
-                <Heading />
-                
+                <section className={cx("left")}>
+                    <header className={cx("header")}>Collections</header>
+                    <Upload title="Upload BackGround" type="">
+                        Upload
+                    </Upload>
+                    <Upload
+                        title="Upload avatar"
+                        type="PNG, GIF, WEBP, MP4 or MP3. Max 100mb"
+                    >
+                        <GrAddCircle />
+                    </Upload>
+                    <Input
+                        placeholder="Titile of your item @NFT Legendary"
+                        label="Title"
+                    />
+
+                    <TextArea
+                        label="Description"
+                        placeholder={
+                            "Description of your item @NFT Legendary is the NFT specialy...."
+                        }
+                    />
+
+                    <Input placeholder="Url of your item" label="Url" />
+                </section>
+                <section className={cx("right")}>
+                    <CollectionItem />
+                </section>
+            </div>
+            <div className={cx("button-container")}>
+                <Button className={cx("button")}>Create</Button>
             </div>
         </main>
     );
