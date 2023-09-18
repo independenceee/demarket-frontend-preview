@@ -8,7 +8,7 @@ import DefaultLayout from "@/layouts/DefaultLayouts";
 const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Demarket",
+    title: "DEMARKET",
     description: "Demarket",
 };
 

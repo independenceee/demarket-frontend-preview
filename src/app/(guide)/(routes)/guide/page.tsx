@@ -1,8 +1,10 @@
 import React from "react";
 import classNames from "classnames/bind";
 import Background from "@/components/Background";
-import styles from "./Guide.module.scss";
 import Heading from "@/components/Heading";
+import Title from "@/components/Title";
+import GuideItem from "@/components/GuideItem";
+import styles from "./Guide.module.scss";
 
 type Props = {};
 
@@ -15,12 +17,16 @@ const Guide = function ({}: Props) {
                 description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit."
             />
 
-            <Heading title="Home - Guide page" />
+            <Title main="Home" slug="Guide" />
 
             <Heading
                 title="How can I help You?"
                 description="You don’t Know how to use feature of pladform. Let me give you some Manual document."
             />
+
+            <section className={cx("guide-wrapper")}>
+                <GuideItem />
+            </section>
         </main>
     );
 };

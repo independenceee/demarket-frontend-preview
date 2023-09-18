@@ -1,26 +1,26 @@
 .wrapper {
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 100px;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 700;
+    // min-width: 100px;
+    padding: 18px 110px;
     font-family: var(--font-family);
     cursor: pointer;
-    color: #fff;
+    color: #ebe6e6e5;
     border-radius: 30px;
-    background: var(
-        --gradient-purple-to-light,
-        linear-gradient(
-            90deg,
-            #2400ff -22.36%,
-            rgba(92, 0, 241, 0.85) 39.25%,
-            rgba(112, 0, 255, 0.7) 68.73%,
-            rgba(173, 0, 255, 0.55) 129.76%
-        )
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+
+    background: linear-gradient(
+        90deg,
+        #2400ff -22.36%,
+        rgba(92, 0, 241, 0.85) 39.25%,
+        rgba(112, 0, 255, 0.7) 68.73%,
+        rgba(173, 0, 255, 0.55) 129.76%
     );
+
     border: 1px solid transparent;
     user-select: none;
 
@@ -107,4 +107,54 @@
 .large {
     padding: 14px 16px;
     min-width: 140px;
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        // min-width: 100px;
+        padding: 13px 27px;
+        font-family: var(--font-family);
+        cursor: pointer;
+        color: #ebe6e6e5;
+        border-radius: 30px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 12px;
+
+        background: linear-gradient(
+            90deg,
+            #2400ff -22.36%,
+            rgba(92, 0, 241, 0.85) 39.25%,
+            rgba(112, 0, 255, 0.7) 68.73%,
+            rgba(173, 0, 255, 0.55) 129.76%
+        );
+
+        border: 1px solid transparent;
+        user-select: none;
+
+        + .wrapper {
+            margin-left: 8px;
+        }
+
+        &.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1535px) {
+}
+
+@media only screen and (min-width: 1536px) {
 }

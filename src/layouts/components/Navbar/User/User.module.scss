@@ -1,0 +1,108 @@
+.container_user {
+    color: #4C4747;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  .container_user_unlog {
+    display: flex;
+    margin: auto 0;
+    align-items: center;
+    position: relative;
+    span {
+      width: 16px;
+      height: 16px;
+      z-index: 1000;
+      position: absolute;
+      top: -5px;
+      right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      background-color: #ff0000;
+      color: var(--font_color_white);
+      border: var(--border);
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+  .container_user_log {
+    position: relative;
+
+    .container_avatar_display {
+        border: 2px solid var(--font_color_dark);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .container_fullback {
+        border: 1px solid #fff;
+      overflow: hidden;
+      top: 60px;
+      right: -15px;
+      width: 400px;
+      z-index: 1000;
+      position: absolute;
+      border-radius: var(--border_radius_20);
+      background-color: var(--backgroundcolor_60);
+      .container_background {
+        margin-bottom: 60px;
+        position: relative;
+        height: 200px;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .container_avatar {
+            top: 75%;
+            left: 5%;
+            border: 1px solid #fff;
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .user_name{
+            font-weight: 700;
+            position: absolute;
+            top: 105%;
+            left:  35%;
+        }
+      }
+      .detail_info{
+        
+        display: flex;
+        flex-direction: column;
+        .row_info{
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px 10px 40px;
+            span:first-child{
+                font-weight: 700;
+            }
+            &:hover{
+                background-color: var(--backgroundcolor_30);
+            }
+            &:last-child{
+                border-top:var(--border) ;
+            }
+        }
+      }
+    }
+  }
+}

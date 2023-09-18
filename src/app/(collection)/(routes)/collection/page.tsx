@@ -47,7 +47,7 @@ const Collection = function ({}: Props) {
                 </section>
             </div>
             <div className={cx("button-container")}>
-                <Button className={cx("button")}>Create</Button>
+                <Button>Create</Button>
             </div>
         </main>
     );

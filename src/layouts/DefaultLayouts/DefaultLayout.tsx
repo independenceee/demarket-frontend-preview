@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-// import Header from "../components/Header"
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 type Props = {
     children: ReactNode;
@@ -8,6 +8,7 @@ type Props = {
 const DefaultLayout = function ({ children }: Props) {
     return (
         <main>
+            <Header />
             {children}
             <Footer />
         </main>

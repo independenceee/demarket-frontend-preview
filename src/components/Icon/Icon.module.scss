@@ -1,0 +1,22 @@
+.icon_container {
+    opacity: 0.8;
+    background-color: var(--backgroundcolor_30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 50px;
+    color: var(--font_color_dark);
+    font-size: 18px;
+    border: var(--border);
+}
+.icon_container:hover {
+    opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+    .icon_container {
+        margin-left: 20px;
+    }
+}

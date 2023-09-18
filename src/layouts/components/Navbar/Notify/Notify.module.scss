@@ -1,0 +1,30 @@
+.container_notify{
+    position: relative;
+    .notify_display{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 300px;
+        z-index: 1000;
+        background-color: var(--backgroundcolor_60);
+        border: var(--border_input);
+        border-radius: var(--border_radius_20);
+        top: 40px;
+        left:-10px;
+        .notify_row{
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            align-items: center;
+            
+            p{
+                margin: 0;
+            }
+            &:hover{
+                background-color: var(--backgroundcolor_30);
+            }
+        }
+    }
+}

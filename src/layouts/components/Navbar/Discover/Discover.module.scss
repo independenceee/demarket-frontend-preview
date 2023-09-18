@@ -1,0 +1,16 @@
+.container_discover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 16px;
+  li{
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    list-style: none;
+    a {
+    }
+    &:hover{
+        color: var(--font_color_purble_hover);
+    }
+  }
+}
