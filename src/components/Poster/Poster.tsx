@@ -1,6 +1,5 @@
 import React from "react";
 import classNames from "classnames/bind";
-import Heading from "@/components/Heading";
 import styles from "./Poster.module.scss";
 
 const cx = classNames.bind(styles);
@@ -13,12 +12,10 @@ type Props = {
 const Poster = function ({ title, description }: Props) {
     return (
         <section className={cx("wrapper")}>
-            <Heading
-                title={title}
-                description={description}
-                classNameTitle={cx("title")}
-                classNameDescription={cx("description")}
-            />
+            <div className={cx("container")}>
+                <h2 className={cx("title")}>{title}</h2>
+                <p className={cx("description")}>{description}</p>
+            </div>
         </section>
     );
 };
