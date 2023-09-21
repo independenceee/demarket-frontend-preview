@@ -1,0 +1,23 @@
+.containerList_container {
+    margin: 30px;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    .container_more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: rgba(124, 58, 237, 0.75);
+        font-weight: 600;
+        margin: 20px;
+    }
+}

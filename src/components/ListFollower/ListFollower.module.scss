@@ -1,0 +1,15 @@
+.listnft_container_box {
+    // width:100%;
+    max-width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    // margin: 0 auto;
+  }
+  @media screen and (max-width:1130px) {
+    .listnft_container_box{
+      gap: 20px;
+      max-width: 600px ;
+    } 
+  }

@@ -1,11 +1,11 @@
 @import "normalize.css";
-
+@import "bootstrap/dist/css/bootstrap.min.css";
 /* variable */
 
 :root {
     --backgroundcolor_60: #fff;
     --backgroundcolor_30: #f8fafd;
-    --linearcolor_before_hover: linear-gradient(
+    --linearcolor_befor_hover: linear-gradient(
         90deg,
         #8f04a6 0%,
         #c0f 0%,
@@ -23,8 +23,8 @@
         rgba(4, 0, 203, 0.89) 79.64%,
         #1400ff 99.32%
     );
-
     --border: 0.1px solid #8f04a6;
+    --color_purple: #8f04a6;
     --border_input: 0.1px solid #96999c;
     --border_hover: 0.2px solid #d900ff;
     --hover_shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
@@ -61,6 +61,47 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.btn_config_purple {
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    border: none;
+    height: 40px;
+    color: var(--background_white);
+    width: 160px;
+    border-radius: 30px;
+    background: linear-gradient(
+        90deg,
+        #8f04a6 0%,
+        #c0f 0%,
+        #7000ff 39.36%,
+        rgba(44, 0, 219, 0.91) 63.12%,
+        rgba(4, 0, 203, 0.89) 79.64%,
+        #1400ff 99.32%
+    );
+}
+.btn_config_default {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    height: 40px;
+    color: #4c4747;
+    background-color: #fff;
+    border: 1px solid var(--gradient-purple-to-dark, #a511ca);
+    border-radius: 30px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--font-color);
+}
+.nav-link:hover {
+    color: rgba(124, 58, 237, 0.75);
+}
+.nav-link.active {
+    color: rgba(124, 58, 237, 0.75) !important;
 }
 
 @media only screen and (max-width: 767px) {

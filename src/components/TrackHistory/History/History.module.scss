@@ -1,0 +1,19 @@
+.container_history{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    .container_image{
+        margin: 10px;
+    }
+    .container_info{
+        width: 100%;
+        margin: 0 20px;
+        .container_row{
+            display: flex;
+            justify-content: space-between;
+            span:nth-child(2){
+                font-weight: 600;
+            }
+        }
+    }
+}

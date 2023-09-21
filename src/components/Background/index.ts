@@ -1,1 +1,1 @@
-export { default } from "./Backgound";
+export { default } from "./Background";

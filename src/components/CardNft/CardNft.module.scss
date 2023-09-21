@@ -1,0 +1,121 @@
+.cardnft_container {
+    width: 260px;
+    // max-width: 280x;
+    // height: 410px;
+    border-radius: 20px;
+    border: 0.5px solid #8f04a6;
+    background: #f8fafd;
+    // margin: 10px;
+    a {
+        border-radius: 20px;
+    }
+    .cardnft_container_image {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        margin: 8px auto;
+        border-radius: 20px;
+        opacity: 0.85;
+        background: linear-gradient(
+            227deg,
+            rgba(255, 255, 255, 0.5) 2.04%,
+            rgba(204, 198, 198, 0.75) 51.02%,
+            #665959 100%
+        );
+        box-shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .cardnft_container_image_icon {
+            top: 10px;
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .cardnft_container_info {
+        width: 100%;
+        margin: 0 auto;
+        .cardnft_container_info_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 25px;
+                color: #8f04a6;
+                font-weight: 700;
+            }
+        }
+        .cardnft_container_info_auth {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10px;
+            border-radius: 10px;
+            background-color: #e4eeef;
+            margin: 0 10px;
+            .cardnft_container_info_auth_use {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .user_image {
+                    width: 40px;
+                    height: 40px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50px;
+                    }
+                }
+                span {
+                    display: flex;
+                    padding-left: 10px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .cardnft_container_info_auth_price {
+                font-weight: 600;
+                span:first-child {
+                    padding-right: 5px;
+                }
+            }
+        }
+        .cardnft_container_info_PolicyID {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 5px;
+            span {
+                margin: 5px;
+                font-weight: 600;
+            }
+            .cardnft_container_info_PolicyID_right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+                span {
+                    font-weight: normal;
+                    font-size: 12px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+.cardnft_container:hover {
+    box-shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+// @media screen and (max-width:768px) {
+//   .cardnft_container{
+//     width: 100%;
+//   }
+// }

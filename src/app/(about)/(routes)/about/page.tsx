@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames/bind";
 import Image from "next/image";
 import Heading from "@/components/Heading";
-import Background from "@/components/Background";
+import Background from "@/components/Poster";
 import images from "@/assets/images";
 import Founder from "@/components/Founder";
 import styles from "./About.module.scss";

@@ -1,0 +1,77 @@
+.cardnft_container {
+    color: var(--font_color_dark);
+    height: auto;
+    width: 260px;
+    // max-width: 280x;
+    // height: 410px;
+    border-radius: 20px;
+    border: 0.5px solid #8f04a6;
+    background: #f8fafd;
+    // margin: 10px;
+    
+    .cardnft_container_bg {
+      position: relative;
+      width: 240px;
+      height: 120px;
+      margin: 8px auto;
+      border-radius: 20px;
+      a {
+        border-radius: 20px;
+        height: 100%;
+        width: 100%;
+      }
+      box-shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+      .avatar {
+        width: 70px; /* Điều chỉnh kích thước avatar theo nhu cầu của bạn */
+        height: 70px; /* Điều chỉnh kích thước avatar theo nhu cầu của bạn */
+        background-color: #fff; /* Màu nền của avatar (có thể là màu sắc khác) */
+        border-radius: 50%; /* Để tạo hình tròn cho avatar */
+        position: absolute; /* Đặt vị trí tuyệt đối để điều khiển vị trí của avatar */
+        left: 50%; /* Đưa avatar ra giữa theo chiều ngang */
+        transform: translateX(
+          -50%
+        ); 
+        top: 70%;
+        border: 4px solid #fff;
+        /* Dịch chuyển avatar ngang để đặt nó vào giữa */
+        bottom: 0;
+        overflow: hidden;
+      }
+      // &::before {
+      //     content: '';
+      //     position: absolute;
+      //     top: 50%; /* Đặt ở giữa theo chiều dọc */
+      //     left: 50%; /* Đặt ở giữa theo chiều ngang */
+      //     width: 180px; /* Điều chỉnh chiều rộng khoảng trắng */
+      //     height: 180x; /* Điều chỉnh chiều cao khoảng trắng */
+      //     background-color: #fff; /* Màu nền trong suốt */
+      //     transform: translate(-50%, -50%); /* Đặt khoảng trắng vào giữa */
+      //     z-index: 10000; /* Đặt z-index thấp hơn để đè phủ phía sau avatar */
+      //   }
+    }
+    .cardnft_container_info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 10px 10px 10px;
+      .cardnft_container_info_title{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span{
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
+    
+  }
+  .cardnft_container:hover {
+    box-shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;  
+  }

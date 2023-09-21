@@ -1,0 +1,48 @@
+.container_listcollection{
+    
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 0.5px solid #c4cbd1;
+    table.table_changebgcolor{
+        background-color: #F8FAFD !important;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-bottom: 0 !important;
+        thead{
+            
+            height: 60px;
+            tr{
+                
+                th{           
+                    padding: 20px 20px;
+                }
+            }
+        }
+        tbody{
+            font-size: 16px;
+            font-weight: 500;
+            margin: 10px auto;
+            tr{
+                th{
+                    
+                    padding: 20px 20px;
+                    a{  width: 50px;
+                        height: 50px;
+                        display: block;
+                        border-radius: 50px;
+                        img{
+                            width: 100%;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+                td{
+                    padding: 30px 30px;
+                }
+
+            
+            }
+        }
+    }
+}

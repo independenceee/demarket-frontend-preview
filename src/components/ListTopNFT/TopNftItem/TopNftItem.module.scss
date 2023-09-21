@@ -1,0 +1,49 @@
+.topNftItem_container{
+    border: 1px solid #8f04a6;
+    width: 360px;
+    height: 224px;
+    border-radius: 20px;
+    .container_images{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        img{
+            height: 100%;
+            border-radius: 20px;
+            background-size: cover;
+        }
+    }
+    a{
+        width: 100%;
+        height: 100%;
+    }
+}
+.topNftItem_container:hover{
+    border: none;
+    transition: 0.2s ease-in-out;
+    box-shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@keyframes moveRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .moveRightToLeft {
+    animation: moveRightToLeft 30s linear infinite; /* Điều chỉnh thời gian và animation theo ý muốn */
+  }
+  .moveLeftToRight {
+    animation: moveLeftToRight 35s linear infinite; /* Điều chỉnh thời gian và animation theo ý muốn */
+  }
+  

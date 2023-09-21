@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames/bind";
 import Heading from "@/components/Heading";
-import styles from "./Background.module.scss";
+import styles from "./Poster.module.scss";
 
 const cx = classNames.bind(styles);
 
@@ -10,7 +10,7 @@ type Props = {
     description: string;
 };
 
-const Background = function ({ title, description }: Props) {
+const Poster = function ({ title, description }: Props) {
     return (
         <section className={cx("wrapper")}>
             <Heading
@@ -23,4 +23,4 @@ const Background = function ({ title, description }: Props) {
     );
 };
 
-export default Background;
+export default Poster;

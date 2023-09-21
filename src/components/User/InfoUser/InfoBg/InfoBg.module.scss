@@ -1,0 +1,102 @@
+.container{
+    width: 100%;
+    .background{
+        position: relative;
+        width: 100%;
+        height: 396px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .avatar{
+            margin-bottom: 20px;
+            left: 100px;
+            top: 75%;
+            position: absolute;
+            border-radius: 100px;
+            border: 2px solid var(--backgroundcolor_60);
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .icon{
+            position: absolute;
+            right: 2%;
+            top:86%
+        }
+        .follow{
+            color: var(-linearcolor_befor_hover);
+            position: absolute;
+            top:130%;
+            left: 150px;
+        }
+    }
+    .description{
+        height: 200px;
+        width: 90%;
+        margin: 0 auto;
+        background-color: var(--backgroundcolor_30);
+        border-radius: 0 0 20px 20px;
+        padding-left: 250px;
+        .row_description{
+            display: flex;
+            justify-content: space-between;
+            .name{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1{
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin-right: 10px;
+                    
+                }
+            }
+            .contact{
+                margin: 20px;
+                display: flex;
+                gap: 20px;
+                .icon{
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: solid 2px var(--color_purple);
+                    a{
+                        padding-top: 2px;
+                        padding-left: 10px;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1200px) {
+        .description{
+            .row_description{
+                .name{
+                    h1{
+                        font-size: 20px;
+                        margin-left:20px ;
+                    }
+                }
+            }
+            .sologan{
+                font-size: 14px;
+                margin-left:20px ;
+            }
+        }
+    }
+}
