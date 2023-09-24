@@ -25,9 +25,8 @@ const Collection = function ({}: Props) {
                     <Upload
                         title="Upload avatar"
                         type="PNG, GIF, WEBP, MP4 or MP3. Max 100mb"
-                    >
-                        <GrAddCircle />
-                    </Upload>
+                    />
+
                     <Input
                         placeholder="Titile of your item @NFT Legendary"
                         label="Title"

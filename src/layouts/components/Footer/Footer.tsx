@@ -7,7 +7,7 @@ import { AiFillHeart } from "react-icons/ai";
 import images from "@/assets/images";
 import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
-import { LuSendHorizonal} from "react-icons/lu"
+import { LuSendHorizonal } from "react-icons/lu";
 
 const cx = classNames.bind(styles);
 type Props = {};
@@ -72,36 +72,38 @@ const Footer = function ({}: Props) {
                 </section>
 
                 <section className={cx("content")}>
-                    <h2 className={cx("heading")}>
-                        Please give us some feedback
-                    </h2>
-                    <div className={cx("input-wrapper")}>
-                        <input
-                            type="text"
-                            placeholder="Your feedback"
-                            className={cx("input")}
-                        />
-                        <div className={cx("icon-container")}>
-                        <LuSendHorizonal className={cx("icon")}/>
+                    <div className={cx("footer-contact")}>
+                        <h2 className={cx("contact")}>
+                            Please give us some feedback
+                        </h2>
+                        <div className={cx("input-wrapper")}>
+                            <input
+                                type="text"
+                                placeholder="Your feedback"
+                                className={cx("input")}
+                            />
+                            <div className={cx("icon-container")}>
+                                <LuSendHorizonal className={cx("icon")} />
+                            </div>
                         </div>
-                    </div>
-                    <h2 className={cx("contact")}>Contact With us here</h2>
-                    <div className={cx("list-icon")}>
-                        <Link href="#" className={cx("icon-link")}>
-                            <FaFacebookSquare className={cx("icon")} />
-                        </Link>
-                        <Link href="#" className={cx("icon-link")}>
-                            <BsInstagram className={cx("icon")} />
-                        </Link>
-                        <Link href="#" className={cx("icon-link")}>
-                            <BsLinkedin className={cx("icon")} />
-                        </Link>
-                        <Link href="#" className={cx("icon-link")}>
-                            <FaTwitter className={cx("icon")} />
-                        </Link>
-                        <Link href="#" className={cx("icon-link")}>
-                            <BsGithub className={cx("icon")} />
-                        </Link>
+                        <h2 className={cx("contact")}>Contact With us here</h2>
+                        <div className={cx("list-icon")}>
+                            <Link href="#" className={cx("icon-link")}>
+                                <FaFacebookSquare className={cx("icon")} />
+                            </Link>
+                            <Link href="#" className={cx("icon-link")}>
+                                <BsInstagram className={cx("icon")} />
+                            </Link>
+                            <Link href="#" className={cx("icon-link")}>
+                                <BsLinkedin className={cx("icon")} />
+                            </Link>
+                            <Link href="#" className={cx("icon-link")}>
+                                <FaTwitter className={cx("icon")} />
+                            </Link>
+                            <Link href="#" className={cx("icon-link")}>
+                                <BsGithub className={cx("icon")} />
+                            </Link>
+                        </div>
                     </div>
                 </section>
             </div>

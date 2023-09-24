@@ -36,3 +36,25 @@
         }
     }
 }
+
+.circle {
+    padding: 8px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(
+        90deg,
+        #2400ff -22.36%,
+        rgba(92, 0, 241, 0.85) 39.25%,
+        rgba(112, 0, 255, 0.7) 68.73%,
+        rgba(173, 0, 255, 0.55) 129.76%
+    );
+}
+
+.icon {
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}

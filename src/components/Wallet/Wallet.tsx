@@ -1,12 +1,11 @@
 "use client";
 
 import React from "react";
-import { Lucid, Blockfrost, } from "lucid-cardano";
+import { Lucid, Blockfrost } from "lucid-cardano";
 
 export default function Wallet() {
     const handleConnectWallet = async () => {
         try {
-            console.log("connecting ...");
             const lucid = await Lucid.new(
                 new Blockfrost(
                     "https://cardano-preview.blockfrost.io/api/v0",
@@ -29,7 +28,7 @@ export default function Wallet() {
                 .newTx()
                 .payToContract(
                     matchingNumberAddress,
-                    { inline: Data.to(100n)},
+                    { inline: Data.to(100n) },
                     {
                         lovelace: 20000000n,
                     },

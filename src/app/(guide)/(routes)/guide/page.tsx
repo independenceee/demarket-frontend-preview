@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames/bind";
-import Background from "@/components/Poster";
+import Poster from "@/components/Poster";
 import Heading from "@/components/Heading";
 import Title from "@/components/Title";
 import GuideItem from "@/components/GuideItem";
@@ -13,7 +13,7 @@ const Guide = function ({}: Props) {
     return (
         <main className={cx("wrapper")}>
             <section className={cx("background")}>
-                <Background
+                <Poster
                     title="Guide Center"
                     description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit."
                 />

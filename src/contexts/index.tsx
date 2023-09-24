@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import WalletProvider from "./WalletProvider";
+import WalletProvider from "./LucidProvider";
 type Props = {
     children: ReactNode;
 };

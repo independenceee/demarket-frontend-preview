@@ -8,6 +8,7 @@ import TextArea from "@/components/TextArea";
 import Select from "@/components/Select";
 import Metadata from "@/components/Metadata";
 import Bill from "@/components/Bill";
+import Button from "@/components/Button";
 
 const cx = classNames.bind(styles);
 
@@ -33,6 +34,9 @@ const Mint = function ({}: Props) {
                     />
                     <Metadata />
                     <Bill />
+                    <div className={cx("mint")}>
+                        <Button>Mint</Button>
+                    </div>
                 </section>
                 <section className={cx("right")}>
                     <header className={cx("network")}>Preview</header>

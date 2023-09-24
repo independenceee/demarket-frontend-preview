@@ -1,5 +1,6 @@
 .wrapper {
     overflow: hidden;
+    width: 100%;
 }
 
 .about-wrapper {
@@ -63,10 +64,17 @@
                     text-align: center;
                     display: inline-block;
                     padding: 10px 20px;
-                    max-width: 110px;
-                    background-color: #333;
+                    max-width: 120px;
+                    background: linear-gradient(
+                        90deg,
+                        #2400ff -22.36%,
+                        rgba(92, 0, 241, 0.85) 39.25%,
+                        rgba(112, 0, 255, 0.7) 68.73%,
+                        rgba(173, 0, 255, 0.55) 129.76%
+                    );
                     color: #fff;
                     font-size: 12px;
+                    font-weight: 600;
                     text-decoration: none;
                     border-radius: 25px;
                     margin-top: 15px;
@@ -78,7 +86,8 @@
 }
 
 .founder-wrapper {
-    padding: 46px 10% 10%;
+    padding: 46px 10px 10%;
+    background: #f8fafd;
 
     .founder-container {
         margin-top: 50px;
@@ -103,6 +112,21 @@
     }
 }
 
+.title {
+    margin-top: 20px;
+}
+
+.about-wrapper {
+    margin-top: 40px;
+    background: #f8fafd;
+    margin: 20px 10px 80px;
+    border-radius: 12px;
+}
+
+.heading {
+    margin-top: 40px;
+}
+
 @media screen and (max-width: 768px) {
     .about-container {
         padding: 0;
@@ -114,6 +138,9 @@
             .about-image {
                 margin-right: 0px;
                 margin-bottom: 20px;
+            }
+            .about-button {
+                text-align: center;
             }
         }
     }

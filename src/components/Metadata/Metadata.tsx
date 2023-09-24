@@ -4,6 +4,7 @@ import { IoMdAdd } from "react-icons/io";
 import classNames from "classnames/bind";
 import styles from "./Metadata.module.scss";
 import Button from "@/components/Button";
+import { BsTrashFill } from "react-icons/bs";
 
 const cx = classNames.bind(styles);
 type Props = {};
@@ -42,7 +43,6 @@ const Metadata = function ({}: Props) {
         }
     };
 
-    console.log(data);
     return (
         <div className={cx("wrapper")}>
             <h3 className={cx("label")}>Custom Metadata</h3>
@@ -67,14 +67,15 @@ const Metadata = function ({}: Props) {
                                 return handleChage(event, index);
                             }}
                         />
-                        <Button
+
+                        <div
                             className={cx("delete")}
                             onClick={function () {
                                 return handleDelete(index);
                             }}
                         >
-                            Delete
-                        </Button>
+                            <BsTrashFill />
+                        </div>
                     </div>
                 );
             })}
