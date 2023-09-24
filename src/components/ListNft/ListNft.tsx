@@ -5,6 +5,11 @@ import styles from "./ListNft.module.scss";
 import images from "@/assets/images";
 import Link from "next/link";
 import { GrFormNextLink } from "react-icons/gr";
+import classNames from "classnames/bind";
+import Pagination from "../Pagination/Pagination";
+import MoreNext from "../MoreNext/MoreNext";
+
+const cx = classNames.bind(styles);
 const ListNft = () => {
     const NFTs = [
         {
@@ -16,6 +21,7 @@ const ListNft = () => {
             metadatatype: "Gift",
             price_nft: 90,
             policyid: "qhut0...hfteh45",
+            status_verify: true,
         },
         {
             id: 1,
@@ -26,6 +32,7 @@ const ListNft = () => {
             metadatatype: "Gift",
             price_nft: 90,
             policyid: "qhut0...hfteh45",
+            status_verify: false,
         },
         {
             id: 2,
@@ -36,6 +43,7 @@ const ListNft = () => {
             metadatatype: "Gift",
             price_nft: 90,
             policyid: "qhut0...hfteh45",
+            status_verify: true,
         },
         {
             id: 3,
@@ -46,6 +54,7 @@ const ListNft = () => {
             metadatatype: "Gift",
             price_nft: 90,
             policyid: "qhut0...hfteh45",
+            status_verify: false,
         },
         {
             id: 4,
@@ -56,6 +65,7 @@ const ListNft = () => {
             metadatatype: "Gift",
             price_nft: 90,
             policyid: "qhut0...hfteh45",
+            status_verify: true,
         },
         {
             id: 5,
@@ -66,6 +76,7 @@ const ListNft = () => {
             metadatatype: "Gift",
             price_nft: 90,
             policyid: "qhut0...hfteh45",
+            status_verify: false,
         },
         {
             id: 6,
@@ -76,6 +87,7 @@ const ListNft = () => {
             metadatatype: "Gift",
             price_nft: 90,
             policyid: "qhut0...hfteh45",
+            status_verify: true,
         },
         {
             id: 7,
@@ -86,10 +98,11 @@ const ListNft = () => {
             metadatatype: "Gift",
             price_nft: 90,
             policyid: "qhut0...hfteh45",
+            status_verify: false,
         },
     ];
     return (
-        <div className={styles.listnft_container_box}>
+        <div className={cx("listnft_container_box")}>
             {NFTs.map((NFT) => {
                 return (
                     <CardNFT
@@ -102,9 +115,11 @@ const ListNft = () => {
                         metadatatype={`${NFT.metadatatype}`}
                         price_nft={NFT.price_nft}
                         policyid={`${NFT.policyid}`}
+                        status_verify={NFT.status_verify}
                     />
                 );
             })}
+            <MoreNext />
         </div>
     );
 };

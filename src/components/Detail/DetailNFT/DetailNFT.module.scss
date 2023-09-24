@@ -1,0 +1,20 @@
+.container_image {
+    margin: auto;
+    position: relative;
+    width: 680px;
+    border-radius: 40px;
+    img {
+        width: 100%;
+        border: 0.2px solid #dee2e6;
+        border-radius: 40px;
+        object-fit: cover;
+    }
+    .cardnft_container_image_icon {
+        padding: 0 25px;
+        top: 40px;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+}

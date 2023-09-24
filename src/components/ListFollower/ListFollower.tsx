@@ -4,7 +4,10 @@ import React from "react";
 import images from "@/assets/images";
 import styles from "./ListFollower.module.scss";
 import Follower from "./Follower/Follower";
+import classNames from "classnames/bind";
+import MoreNext from "../MoreNext/MoreNext";
 interface ListFollowerProps {}
+const cx = classNames.bind(styles);
 const ListFollower = ({}: ListFollowerProps) => {
     const Followers = [
         {
@@ -18,35 +21,35 @@ const ListFollower = ({}: ListFollowerProps) => {
             id_user: 1,
             image_user: images.logo,
             image_bg: images.logo,
-            name_user: "User 1",
+            name_user: "User 2",
             price: 1327.124,
         },
         {
             id_user: 2,
             image_user: images.logo,
             image_bg: images.logo,
-            name_user: "User 2",
+            name_user: "User 3",
             price: 1327.124,
         },
         {
             id_user: 3,
             image_user: images.logo,
             image_bg: images.logo,
-            name_user: "User 7",
+            name_user: "User 4",
             price: 1327.124,
         },
         {
             id_user: 4,
             image_user: images.logo,
             image_bg: images.logo,
-            name_user: "User 7",
+            name_user: "User 5",
             price: 1327.124,
         },
         {
             id_user: 5,
             image_user: images.logo,
             image_bg: images.logo,
-            name_user: "User 7",
+            name_user: "User 6",
             price: 1327.124,
         },
         {
@@ -65,7 +68,7 @@ const ListFollower = ({}: ListFollowerProps) => {
         },
     ];
     return (
-        <div className={styles.listnft_container_box}>
+        <div className={cx("listnft_container_box")}>
             {Followers.map((Fol) => {
                 return (
                     <Follower
@@ -78,6 +81,7 @@ const ListFollower = ({}: ListFollowerProps) => {
                     />
                 );
             })}
+            <MoreNext />
         </div>
     );
 };

@@ -1,14 +1,17 @@
 "use client";
 import React from "react";
 import styles from "./Follower.module.scss";
-import { StaticImageData } from "next/image";
+
 import Link from "next/link";
 import Image from "next/image";
 import ButtonBorderLinear from "@/components/ButtonBorderLinear/ButtonBorderLinear";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 interface FollowerPros {
     id_user: number;
-    image_user: StaticImageData;
-    image_bg: StaticImageData;
+    image_user: StaticImport;
+    image_bg: StaticImport;
     name_user: string;
     price: number;
     // have_price:boolean,
@@ -21,12 +24,12 @@ const Follower = ({
     price,
 }: FollowerPros) => {
     return (
-        <div className={styles.cardnft_container}>
-            <div className={styles.cardnft_container_bg}>
+        <div className={cx("cardnft_container")}>
+            <div className={cx("cardnft_container_bg")}>
                 <Link href={"/pages/products/" + id_user}>
-                    <Image src={image_bg} width={260} height={260} alt="BG" />
+                    <Image src={image_bg} alt="BG" />
                 </Link>
-                <div className={styles.avatar}>
+                <div className={cx("avatar")}>
                     <Image
                         src={image_user}
                         width={50}
@@ -35,8 +38,8 @@ const Follower = ({
                     />
                 </div>
             </div>
-            <div className={styles.cardnft_container_info}>
-                <div className={styles.cardnft_container_info_title}>
+            <div className={cx("cardnft_container_info")}>
+                <div className={cx("cardnft_container_info_title")}>
                     <span>{name_user}</span>
                     <span>{price}</span>
                 </div>

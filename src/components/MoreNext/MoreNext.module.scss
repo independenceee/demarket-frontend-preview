@@ -1,0 +1,22 @@
+.container_more {
+    display: block;
+    width: 66px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--font_color_dark);
+    a {
+        font-size: var(--font_size_title);
+        background-image: var(
+            --linearcolor_befor_hover
+        ); /* Điều chỉnh màu gradient theo ý muốn */
+        -webkit-background-clip: text; /* Áp dụng gradient lên vùng chữ */
+        background-clip: text; /* Áp dụng gradient lên vùng chữ */
+        color: transparent; /* Làm chữ trở thành trong suốt */
+    }
+    a:hover {
+        color: var(--color_purple);
+    }
+}

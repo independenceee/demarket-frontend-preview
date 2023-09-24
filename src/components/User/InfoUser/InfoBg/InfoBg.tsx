@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
 import Link from "next/link";
-import { StaticImageData } from "next/image";
 import Image from "next/image";
 import styles from "./InfoBg.module.scss";
 import Button from "@/components/Button";
@@ -13,10 +11,13 @@ import {
 } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 import { HiOutlinePencilAlt } from "react-icons/hi";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 interface InfoBGProps {
     user: {
-        image_bg: StaticImageData;
-        image_av: StaticImageData;
+        image_bg: StaticImport;
+        image_av: StaticImport;
         user_name: string;
         sologan: string;
         link_face: string;
@@ -25,49 +26,49 @@ interface InfoBGProps {
 }
 const InfoBg = ({ user }: InfoBGProps) => {
     return (
-        <div className={styles.container}>
-            <div className={styles.background}>
-                <Image src={user.image_bg} width={1440} height={792} alt="BG" />
-                <div className={styles.avatar}>
+        <div className={cx("container")}>
+            <div className={cx("background")}>
+                <Image src={user.image_bg} alt="BG" />
+                <div className={cx("avatar")}>
                     <Image
                         src={user.image_av}
-                        width={1536}
-                        height={2340}
-                        alt="AV"
+                        // width={1536}
+                        // height={2340}
+                        alt="avatar"
                     />
                 </div>
-                <div className={styles.icon}>
+                <div className={cx("icon")}>
                     <IconComponent>
                         <AiOutlineCamera />
                     </IconComponent>
                 </div>
-                <div className={styles.follow}>
+                <div className={cx("follow")}>
                     <Button className="btn_config_default">Follow</Button>
                 </div>
             </div>
-            <div className={styles.description}>
-                <div className={styles.row_description}>
-                    <div className={styles.name}>
+            <div className={cx("description")}>
+                <div className={cx("row_description")}>
+                    <div className={cx("name")}>
                         <h1>{user.user_name}</h1>
                         <Link href={"#"}>
                             <HiOutlinePencilAlt />
                         </Link>
                     </div>
-                    <div className={styles.contact}>
-                        <div className={styles.icon}>
+                    <div className={cx("contact")}>
+                        <div className={cx("icon")}>
                             <Link href={user.link_face}>
                                 {" "}
                                 <BiLogoFacebook />
                             </Link>
                         </div>
-                        <div className={styles.icon}>
+                        <div className={cx("icon")}>
                             <Link href={user.link_twitter}>
                                 <AiOutlineTwitter />
                             </Link>
                         </div>
                     </div>
                 </div>
-                <div className={styles.sologan}>{user.sologan}</div>
+                <div className={cx("sologan")}>{user.sologan}</div>
             </div>
         </div>
     );

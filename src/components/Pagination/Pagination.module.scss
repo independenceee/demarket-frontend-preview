@@ -1,0 +1,19 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .page {
+        margin: 20px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid var(--font_color_dark);
+        background-color: var(--back);
+    }
+    .page.active {
+        background-color: #d900ff;
+    }
+}

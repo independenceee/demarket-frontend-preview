@@ -2,13 +2,35 @@
     width: 100%;
     margin: 0 auto;
     .container_body {
-        width: 100%;
-        justify-content: center;
+        max-width: 1500px;
         display: flex;
-        gap: 30px;
+        justify-content: space-between;
         margin: 50px auto;
         .container_list {
-            width: 100%;
+            max-width: 1110px;
+            // margin: auto;
+            .popular_collector {
+                width: 100%;
+                h2 {
+                    font-weight: 700;
+                    margin: 0;
+                    font-size: var(--font_size_h1);
+                    background-image: var(--linearcolor_befor_hover);
+                    background-clip: text; /* Áp dụng gradient lên vùng chữ */
+                    color: transparent;
+                    -webkit-background-clip: text; /* Áp dụng gradient lên vùng chữ */
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1470px) {
+    .container {
+        .container_body {
+            justify-content: center;
+            .container_list {
+                margin: 0 auto;
+            }
         }
     }
 }

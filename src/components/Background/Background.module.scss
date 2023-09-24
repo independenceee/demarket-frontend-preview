@@ -1,22 +1,43 @@
 .background_container {
     width: 100%;
+    color: var(--backgroundcolor_60);
     .background_container_header {
         position: relative;
         width: 100%;
         .background_container_image {
             width: 100%;
+            height: 660px;
             img {
-                background-size: cover;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
         .background_content_container {
             position: absolute;
-            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 35%;
             top: 30%;
             margin-left: 80px;
             color: var(--background_white);
+            h1 {
+                font-size: var(--font_size_h1);
+            }
             p {
-                opacity: 0.8;
+                font-size: var(--font_size_title);
+            }
+            .background_content_button_container {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                a {
+                    display: block;
+                    width: fit-content;
+                    height: 100%;
+                }
             }
             @media screen and (max-width: 1024px) {
                 top: 25%;

@@ -5,6 +5,9 @@ import { InfoBg } from "@/components/User/InfoUser";
 import SideBarLeft from "@/layouts/components/SidebarLeft";
 import TagUser from "@/components/User/TagUser/TagUser";
 import Follower from "@/components/ListFollower/ListFollower";
+import classNames from "classnames/bind";
+
+const cx = classNames.bind(styles);
 const Account = () => {
     const userInfo = {
         image_bg: images.logo,
@@ -16,16 +19,15 @@ const Account = () => {
     };
 
     return (
-        <div className={styles.container}>
+        <div className={cx("container")}>
             <InfoBg user={userInfo} />
-            <div className={styles.container_body}>
+            <div className={cx("container_body")}>
                 <SideBarLeft
                     sibar_left_user={true}
                     sibar_left_marketpace={false}
                 />
                 <TagUser />
             </div>
-            <Follower />
         </div>
     );
 };

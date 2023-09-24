@@ -1,68 +1,84 @@
-.container{
+.container {
     width: 100%;
-    .background{
+    .background {
         position: relative;
         width: 100%;
         height: 396px;
-        img{
+        img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
-        .avatar{
+        .avatar {
             margin-bottom: 20px;
             left: 100px;
             top: 75%;
             position: absolute;
             border-radius: 100px;
-            border: 2px solid var(--backgroundcolor_60);
+            border: 5px solid var(--backgroundcolor_60);
             width: 200px;
             height: 200px;
             overflow: hidden;
-            img{
+            img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
-        .icon{
+        @media screen and (max-width: 892px) {
+            .avatar {
+                top: 76%;
+                left: 60px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .icon {
             position: absolute;
             right: 2%;
-            top:86%
+            top: 86%;
         }
-        .follow{
+        .follow {
             color: var(-linearcolor_befor_hover);
             position: absolute;
-            top:130%;
-            left: 150px;
+            top: 130%;
+            left: 100px;
+        }
+        @media screen and (max-width: 892px) {
+            .follow {
+                top: 120%;
+                left: 40px;
+                width: 150px;
+            }
         }
     }
-    .description{
+    .description {
         height: 200px;
         width: 90%;
         margin: 0 auto;
         background-color: var(--backgroundcolor_30);
         border-radius: 0 0 20px 20px;
         padding-left: 250px;
-        .row_description{
+        .row_description {
             display: flex;
             justify-content: space-between;
-            .name{
+            .name {
                 margin-top: 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                h1{
+                h1 {
                     font-size: 30px;
                     font-weight: 700;
                     margin-right: 10px;
-                    
                 }
             }
-            .contact{
+            .contact {
                 margin: 20px;
                 display: flex;
                 gap: 20px;
-                .icon{
+                .icon {
                     font-size: 20px;
                     display: flex;
                     justify-content: center;
@@ -71,31 +87,31 @@
                     height: 40px;
                     border-radius: 5px;
                     border: solid 2px var(--color_purple);
-                    a{
+                    a {
                         padding-top: 2px;
                         padding-left: 10px;
                         display: block;
                         width: 100%;
                         height: 100%;
-
                     }
                 }
             }
         }
     }
-    @media screen and (max-width:1200px) {
-        .description{
-            .row_description{
-                .name{
-                    h1{
+    @media screen and (max-width: 892px) {
+        .description {
+            height: 160px;
+            .row_description {
+                .name {
+                    h1 {
                         font-size: 20px;
-                        margin-left:20px ;
+                        margin-left: 20px;
                     }
                 }
             }
-            .sologan{
+            .sologan {
                 font-size: 14px;
-                margin-left:20px ;
+                margin-left: 20px;
             }
         }
     }

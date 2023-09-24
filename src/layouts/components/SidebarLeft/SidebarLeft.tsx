@@ -1,14 +1,15 @@
 "use client";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { BsSearch } from "react-icons/bs";
+import { LuSearch } from "react-icons/lu";
 import Search from "../Navbar/Search";
 
-import styles from "./SideBarLeft.module.scss";
+import styles from "./SidebarLeft.module.scss";
 import InfoData from "@/components/User/InfoUser/InfoData/InfoData";
 import { Fillter } from "@/components/User/InfoUser";
 import { HiOutlineFilter } from "react-icons/hi";
-
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 interface SibarLeftProps {
     sibar_left_user: boolean;
     sibar_left_marketpace: boolean;
@@ -21,10 +22,13 @@ const SideBarLeft = ({
     const [windowWidth, setWindowWidth] = useState<number>(
         typeof window !== "undefined" ? window.innerWidth : 0,
     );
-
+    const [isFixedTop, setIsFixedTop] = useState(false);
+    const [isFixedBottom, setIsFixedBottom] = useState(false);
     const handleOpenSibarLeft = () => {
         setOpenSibarLeft(!openSibarLeft);
     };
+    // hàm xử lý khi cửa sổ trình duyệt thay đổi chiều cao:
+
     useEffect(() => {
         // Hàm xử lý sự kiện khi cửa sổ trình duyệt thay đổi kích thước
         const handleResize = () => {
@@ -38,7 +42,7 @@ const SideBarLeft = ({
         };
     }, []);
     useEffect(() => {
-        if (windowWidth > 992) {
+        if (windowWidth > 1470) {
             setOpenSibarLeft(true);
         } else {
             setOpenSibarLeft(false);
@@ -108,36 +112,56 @@ const SideBarLeft = ({
         },
     ];
 
+    // Theo dõi sự kiện cuộn
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            if (scrollY >= 728) {
+                setIsFixedTop(true);
+            }
+            if (scrollY < 728) {
+                setIsFixedTop(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        // Loại bỏ sự kiện cuộn khi component bị hủy
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <div>
-            <div
-                className={`${styles.button_filter} `}
-                onClick={handleOpenSibarLeft}
-            >
+        <div className={cx("container")}>
+            <div className={cx("button_filter")} onClick={handleOpenSibarLeft}>
                 <HiOutlineFilter />
             </div>
             {openSibarLeft && (
                 <div
-                    className={`${styles.container} ${
-                        openSibarLeft ? styles.active : ""
-                    }`}
+                    className={cx(
+                        "container_sibarleft",
+                        openSibarLeft ? "active" : "",
+                        isFixedTop ? "scrollTop" : "",
+                        // isFixedBottom ? "scrollBottom" : "",
+                    )}
                 >
-                    <div className={styles.search}>
+                    <div className={cx("search")}>
                         <h1>Search</h1>
                         <Search title="Search">
-                            <BsSearch />
+                            <LuSearch />
                         </Search>
                     </div>
                     {sibar_left_user && (
-                        <div className={styles.introduce}>
+                        <div className={cx("introduce")}>
                             <InfoData data={dataUser} />
                         </div>
                     )}
-                    <div className={styles.filler}>
+                    <div className={cx("filler")}>
                         <Fillter filter={dataFilter1} name_head="Sort By" />
                     </div>
                     {sibar_left_marketpace && (
-                        <div className={styles.filler}>
+                        <div className={cx("filler")}>
                             <Fillter
                                 filter={dataFilter2}
                                 name_head="Category"
@@ -145,7 +169,7 @@ const SideBarLeft = ({
                         </div>
                     )}
                     {sibar_left_marketpace && (
-                        <div className={styles.filler}>
+                        <div className={cx("filler")}>
                             <Fillter filter={dataFilter3} name_head="Verify" />
                         </div>
                     )}

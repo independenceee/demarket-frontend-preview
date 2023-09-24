@@ -10,14 +10,14 @@ const ListFollowing = ({}: ListFollowingProps) => {
         {
             id_user: 0,
             image_user: images.logo,
-            image_bg: images.BG_1,
+            image_bg: images.logo,
             name_user: "User 1",
             price: 1327.124,
         },
         {
             id_user: 1,
             image_user: images.logo,
-            image_bg: images.BG_1,
+            image_bg: images.logo,
             name_user: "User 1",
             price: 1327.124,
         },

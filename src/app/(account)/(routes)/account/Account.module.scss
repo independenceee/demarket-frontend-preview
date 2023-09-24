@@ -3,10 +3,16 @@
     height: auto;
     margin: 0 auto;
     .container_body {
-        width: 100%;
-        justify-content: center;
+        max-width: 1500px;
+        justify-content: space-between;
         display: flex;
-        gap: 30px;
         margin: 50px auto;
+    }
+}
+@media screen and (max-width: 1470px) {
+    .container {
+        .container_body {
+            justify-content: center;
+        }
     }
 }

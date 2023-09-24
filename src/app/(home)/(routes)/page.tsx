@@ -6,7 +6,7 @@ import images from "@/assets/images";
 import Title from "@/components/Title";
 import ContainerList from "@/components/ContainerList";
 import ListNft from "@/components/ListNft";
-import ListTopNft from "@/components/ListTopNft";
+import ListTopNft from "@/components/ListTopNFT";
 import ListCollection from "@/components/ListCollection";
 import Reviews from "@/components/Reviews";
 
@@ -16,7 +16,7 @@ type Props = {};
 
 const Home = function ({}: Props) {
     return (
-        <main className={styles.main_home}>
+        <div className={cx("main_home")}>
             <Background
                 image_src={images.background}
                 image_width={1500}
@@ -26,7 +26,7 @@ const Home = function ({}: Props) {
                 description="Beginning of the app and website design process, we know it’s tempting to dive right into picking fonts."
                 name_Bg_Page="Home"
                 button1_name="Explore"
-                button2_name="Getting Start"
+                button2_name="Getting Started"
             />
             <Title main="Home" />
             <ContainerList
@@ -54,7 +54,7 @@ const Home = function ({}: Props) {
                 <ListCollection />
             </ContainerList>
             <Reviews />
-        </main>
+        </div>
     );
 };
 

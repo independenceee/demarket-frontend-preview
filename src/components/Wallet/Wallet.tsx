@@ -23,21 +23,6 @@ export default function Wallet() {
 
             const matchingNumberAddress =
                 lucid.utils.validatorToAddress(matchingNumberScript);
-
-            const tx = await lucid
-                .newTx()
-                .payToContract(
-                    matchingNumberAddress,
-                    { inline: Data.to(100n) },
-                    {
-                        lovelace: 20000000n,
-                    },
-                )
-                .complete();
-
-            const signedTx = await tx.sign().complete();
-
-            const txHash = await signedTx.submit();
         } catch (error) {
             console.error("An error occurred:", error);
         }

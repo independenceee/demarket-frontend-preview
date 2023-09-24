@@ -5,10 +5,14 @@ import SideBarLeft from "@/layouts/components/SidebarLeft";
 import ListNft from "@/components/ListNft";
 import styles from "./Marketplace.module.scss";
 import Title from "@/components/Title";
+import classNames from "classnames/bind";
+import ListFollower from "@/components/ListFollower/ListFollower";
+import Pagination from "@/components/Pagination/Pagination";
 
+const cx = classNames.bind(styles);
 const page = () => {
     return (
-        <div className={styles.container}>
+        <div className={cx("container")}>
             <Background
                 image_src={images.background}
                 image_width={1500}
@@ -21,15 +25,17 @@ const page = () => {
                 button2_name="Sell"
             />
             <Title main="Home" slug="Market" />
-            <div className={styles.container_body}>
+            <div className={cx("container_body")}>
                 <SideBarLeft
                     sibar_left_user={false}
                     sibar_left_marketpace={true}
                 />
-                <div className={styles.container_list}>
+                <div className={cx("container_list")}>
                     <ListNft />
-
-                    {/* Paging bar */}
+                    <div className={cx("popular_collector")}>
+                        <h2>Popular Creater</h2>
+                        <ListFollower />
+                    </div>
                 </div>
             </div>
         </div>

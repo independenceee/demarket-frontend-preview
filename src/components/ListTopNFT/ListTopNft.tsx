@@ -39,31 +39,31 @@ const ListTopNft = () => {
     const list_2 = [
         {
             key: 1,
-            src: images.NFT_8,
+            src: images.logo,
         },
         {
             key: 2,
-            src: images.NFT_9,
+            src: images.logo,
         },
         {
             key: 3,
-            src: images.NFT_10,
+            src: images.logo,
         },
         {
             key: 4,
-            src: images.NFT_11,
+            src: images.logo,
         },
         {
             key: 5,
-            src: images.NFT_12,
+            src: images.logo,
         },
         {
             key: 6,
-            src: images.NFT_13,
+            src: images.logo,
         },
         {
             key: 7,
-            src: images.NFT_14,
+            src: images.logo,
         },
     ];
     const [animation1Enabled, setAnimation1Enabled] = useState(true);

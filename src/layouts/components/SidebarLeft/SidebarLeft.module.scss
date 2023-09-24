@@ -1,48 +1,64 @@
 .container {
-    height: fit-content;
-    padding: 0 20px;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: var(--backgroundcolor_30);
-    border-radius: 20px;
-    .search {
-        margin-top: 20px;
-        h1 {
-            font-size: 30px;
+    .container_sibarleft {
+        width: 340px;
+        height: fit-content;
+        padding: 0 20px;
+        // width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--backgroundcolor_30);
+        border-radius: 20px;
+        .search {
+            padding-top: 20px;
+            h1 {
+                font-size: 20px;
+                font-weight: 700;
+            }
         }
     }
-}
-.button_filter {
-    display: none;
-}
-@media screen and (max-width: 992px) {
-    .container {
-        display: none;
-    }
-    .container.active {
-        display: block;
+    .scrollTop {
+        position: fixed;
+        top: 0;
+        left: 6.4px;
+        overflow-y: auto;
+        height: 100%;
+        z-index: 10000;
     }
     .button_filter {
-        z-index: 1000;
         position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        bottom: 5%;
-        right: 5%;
+        display: none;
+        bottom: 2%;
+        right: 2%;
         font-size: 30px;
         height: 40px;
         width: 40px;
-        border-radius: 10px;
-        border: solid 2px #d900ff;
-        color: #d900ff;
-        &:hover {
-            cursor: pointer;
-            background-color: #d900ff;
-            color: #fff;
-            border: 2px solid #fff;
+    }
+}
+@media screen and (max-width: 1470px) {
+    .container {
+        .container_sibarleft {
+            display: none;
+        }
+        .container_sibarleft.active {
+            display: block;
+        }
+
+        .button_filter {
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            border: solid 2px #fff;
+            background-image: var(--linearcolor_befor_hover);
+            color: var(--backgroundcolor_60);
+            &:hover {
+                cursor: pointer;
+                color: var(--color_purple);
+                border: 2px solid var(--color_purple);
+                background-image: none;
+            }
         }
     }
 }

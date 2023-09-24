@@ -1,6 +1,8 @@
 .main_home {
+    max-width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 20px;
     margin: auto;
 }

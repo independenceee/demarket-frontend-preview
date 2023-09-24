@@ -1,0 +1,99 @@
+.container {
+    width: 100%;
+    .container_detail_info_general {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        background-color: #f8fafd;
+        gap: 26px;
+        h1 {
+            padding-top: 20px;
+            font-weight: 600;
+            font-size: 40px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .container_detail_info_one_row {
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .left {
+                width: 70%;
+                align-items: center;
+                display: flex;
+                gap: 20px;
+                span:nth-child(2) {
+                    font-weight: 700;
+                }
+            }
+            .right {
+                display: flex;
+                gap: 10px;
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+        .container_owner {
+            margin-bottom: 20px;
+            .owner {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                h2 {
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .owner_box {
+                    display: flex;
+                    align-items: center;
+                    .info_owner {
+                        padding: 10px;
+                        h3 {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                        span {
+                            font-size: 12px;
+                            font-weight: normal;
+                        }
+                    }
+                    .avatar {
+                        overflow: hidden;
+                        border-radius: 30px;
+                        width: 50px;
+                        height: 50px;
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .box_buy {
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 30px;
+        border: 0.3px solid var(--gradient-purple-to-dark, #a511ca);
+        Button {
+            margin: 10px 10px;
+        }
+    }
+}
+@media screen and (max-width: 1339px) {
+    .container {
+        margin-top: 30px;
+    }
+}
