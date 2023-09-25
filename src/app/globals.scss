@@ -63,6 +63,14 @@ a {
     text-decoration: none;
 }
 
+ul,
+li,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .btn_config_purple {
     font-weight: 600;
     margin-bottom: 20px;

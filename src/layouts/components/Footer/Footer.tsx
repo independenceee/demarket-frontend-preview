@@ -110,7 +110,7 @@ const Footer = function ({}: Props) {
             <div className={cx("origin")}>
                 <p>
                     © 2023 Marketplace. Design & Develop with{" "}
-                    <AiFillHeart className={cx("icon")} /> by Blockreate
+                    <AiFillHeart className={cx("icon")} /> by Blockalpha
                 </p>
             </div>
         </footer>
