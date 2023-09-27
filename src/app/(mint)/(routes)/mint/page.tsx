@@ -39,8 +39,10 @@ const Mint = function ({}: Props) {
                     </div>
                 </section>
                 <section className={cx("right")}>
-                    <header className={cx("network")}>Preview</header>
-                    <NftItem />
+                    <div className={cx("content")}>
+                        <header className={cx("network")}>Preview</header>
+                        <NftItem />
+                    </div>
                 </section>
             </div>
         </main>

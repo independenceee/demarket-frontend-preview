@@ -13,6 +13,7 @@
     }
 
     .container {
+        position: relative;
         .button-container {
             display: flex;
             height: 55px;
@@ -33,7 +34,8 @@
         }
 
         .options {
-            position: relative;
+            position: absolute;
+            width: 100%;
             padding: 20px;
             margin-top: 10px;
             border-radius: 8px;

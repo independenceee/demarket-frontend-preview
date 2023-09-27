@@ -37,28 +37,32 @@
         }
 
         .right {
-            .network {
-                margin: 100px 0 50px;
-                text-align: center;
-                font-size: 46px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 46px;
-                background: var(
-                    --linear-purpletoblue,
-                    linear-gradient(
-                        90deg,
-                        #8f04a6 0%,
-                        #c0f 0%,
-                        #7000ff 39.36%,
-                        rgba(44, 0, 219, 0.91) 63.12%,
-                        rgba(4, 0, 203, 0.89) 79.64%,
-                        #1400ff 99.32%
-                    )
-                );
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+            position: sticky;
+            top: 20px;
+            .content {
+                .network {
+                    margin: 100px 0 50px;
+                    text-align: center;
+                    font-size: 46px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 46px;
+                    background: var(
+                        --linear-purpletoblue,
+                        linear-gradient(
+                            90deg,
+                            #8f04a6 0%,
+                            #c0f 0%,
+                            #7000ff 39.36%,
+                            rgba(44, 0, 219, 0.91) 63.12%,
+                            rgba(4, 0, 203, 0.89) 79.64%,
+                            #1400ff 99.32%
+                        )
+                    );
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
         }
     }

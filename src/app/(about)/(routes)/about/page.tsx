@@ -60,7 +60,9 @@ const About = function ({}: Props) {
                                 blandit.
                             </p>
 
-                            <a className={cx("about-button")}>Contact Us</a>
+                            <div className={cx("about-button")}>
+                                <a className={cx("button")}>Contact Us</a>
+                            </div>
                         </div>
                     </section>
                 </div>

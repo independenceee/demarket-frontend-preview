@@ -37,6 +37,7 @@
 
 .origin {
     padding: 20px;
+
     border-top: 10px solid
         var(
             --linear-purpletoblue,
@@ -57,7 +58,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: 18px;
-
+        margin: 0;
         .icon {
             color: #7000ff;
             font-size: 30px;
@@ -200,6 +201,40 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        justify-content: center;
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            gap: 20px;
+            padding: 70px 8%;
+
+            .aboutus {
+                display: flex;
+
+                flex-direction: column;
+                padding: 0;
+
+                p {
+                    margin-top: 20px;
+                    max-width: 300px;
+                }
+            }
+            .content {
+                text-align: center;
+            }
+            .footer-contact {
+                padding: 0;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {

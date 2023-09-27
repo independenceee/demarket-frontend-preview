@@ -35,3 +35,55 @@
         }
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        background-image: url("../../assets/images/background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: calc(60vh);
+        padding: 0 10%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .title {
+                color: #fff;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .description {
+                color: #fff;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                max-width: 600px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1535px) {
+}
+
+@media only screen and (min-width: 1536px) {
+}

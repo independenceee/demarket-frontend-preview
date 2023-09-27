@@ -17,7 +17,9 @@ const Select = function ({ label }: Props) {
     const options = [
         {
             name: "Github",
-            Icon: BsChevronDown,
+        },
+        {
+            name: "Github",
         },
     ];
 
@@ -40,7 +42,7 @@ const Select = function ({ label }: Props) {
                 </div>
                 {selected && (
                     <ul className={cx("options")}>
-                        {options.map(function ({ name, Icon }, index) {
+                        {options.map(function ({ name }, index) {
                             return (
                                 <li
                                     onClick={function () {
@@ -49,7 +51,6 @@ const Select = function ({ label }: Props) {
                                     className={cx("option")}
                                     key={index}
                                 >
-                                    <Icon className={cx("icon")} />
                                     <span className={cx("option-text")}>
                                         {name}
                                     </span>
