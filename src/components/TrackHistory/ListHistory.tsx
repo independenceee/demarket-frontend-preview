@@ -3,12 +3,13 @@
 import images from "@/assets/images";
 import History from "./History";
 import React, { useTransition } from "react";
-
+import styles from "./ListHistory.module.scss";
+import MoreNext from "../MoreNext/MoreNext";
 const ListHistory = () => {
     const listHs = [
         {
             id: "0",
-            avatar_image: images.logo,
+            avatar_image: images.User_1,
             typeofTransaction: "Buy",
             useTransaction: "Tung",
             price: 100,
@@ -16,7 +17,7 @@ const ListHistory = () => {
         },
         {
             id: "1",
-            avatar_image: images.logo,
+            avatar_image: images.User_2,
             typeofTransaction: "Sell",
             useTransaction: "Son",
             price: 100,
@@ -24,7 +25,7 @@ const ListHistory = () => {
         },
         {
             id: "2",
-            avatar_image: images.logo,
+            avatar_image: images.User_3,
             typeofTransaction: "Buy",
             useTransaction: "Thanh",
             price: 100,
@@ -32,7 +33,7 @@ const ListHistory = () => {
         },
         {
             id: "3",
-            avatar_image: images.logo,
+            avatar_image: images.User_4,
             typeofTransaction: "Sell",
             useTransaction: "Tung",
             price: 100,
@@ -40,7 +41,7 @@ const ListHistory = () => {
         },
     ];
     return (
-        <div>
+        <div className={styles.container}>
             {listHs.map((listH) => {
                 return (
                     <History
@@ -53,6 +54,7 @@ const ListHistory = () => {
                     />
                 );
             })}
+            <MoreNext />
         </div>
     );
 };

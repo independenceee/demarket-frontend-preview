@@ -1,5 +1,6 @@
 .container {
     .container_sibarleft {
+        left: 0;
         width: 340px;
         height: fit-content;
         padding: 0 20px;
@@ -18,11 +19,12 @@
         }
     }
     .scrollTop {
-        position: fixed;
+        position: sticky;
         top: 0;
-        left: 6.4px;
+        left: 0;
+        position: -webkit-sticky;
         overflow-y: auto;
-        height: 100%;
+        max-height: 100vh;
         z-index: 10000;
     }
     .button_filter {
@@ -41,9 +43,20 @@
             display: none;
         }
         .container_sibarleft.active {
+            position: absolute;
+            left: 0;
             display: block;
+            z-index: 1000;
         }
-
+        .scrollTop.active {
+            position: sticky;
+            top: 0;
+            left: 0;
+            position: -webkit-sticky;
+            overflow-y: auto;
+            max-height: 100vh;
+            z-index: 10000;
+        }
         .button_filter {
             z-index: 1000;
             display: flex;

@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "bootstrap/dist/css/bootstrap.min.css";
-
+/* variable */
 
 :root {
     --backgroundcolor_60: #fff;
@@ -23,19 +23,19 @@
         rgba(4, 0, 203, 0.89) 79.64%,
         #1400ff 99.32%
     );
-    --border: 0.1px solid #8f04a6;
+    --border: 0.01rem solid #8f04a6;
     --color_purple: #8f04a6;
-    --border_input: 0.1px solid #96999c;
-    --border_hover: 0.2px solid #d900ff;
-    --hover_shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
-    --border_radius_30: 30px;
-    --border_radius_20: 20px;
-    --font_size_p: 12px;
-    --font_size_title: 16px;
-    --font_size_h1: 40px;
-    --font_size_h2: 36px;
-    --font_size_h3: 32px;
-    --font_size_h4: 28px;
+    --border_input: 0.01rem solid #96999c;
+    --border_hover: 0.02rem solid #d900ff;
+    --hover_shadow: 0.4rem 1rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
+    --border_radius_30: 3rem;
+    --border_radius_20: 2rem;
+    --font_size_p: 1.4rem;
+    --font_size_title: 1.6rem;
+    --font_size_h1: 4rem;
+    --font_size_h2: 3.6rem;
+    --font_size_h3: 3.2rem;
+    --font_size_h4: 2.8rem;
     --font_color_purble_hover: #8f04a6;
     --font_color_white: #fff;
     --font_color_dark: #4c4747;
@@ -49,7 +49,9 @@
     margin: 0;
 }
 
-html,
+html {
+    font-size: 62.5%;
+}
 body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -60,27 +62,13 @@ a {
     text-decoration: none;
 }
 
-ul,
-li,
-ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-input {
-    outline: none;
-}
-
 .btn_config_purple {
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin-right: 30px;
+    font-weight: 700;
     border: none;
-    height: 40px;
+    height: 60;
     color: var(--background_white);
     width: 160px;
-    border-radius: 30px;
+    border-radius: 20px;
     background: linear-gradient(
         90deg,
         #8f04a6 0%,
@@ -92,14 +80,14 @@ input {
     );
 }
 .btn_config_default {
+    width: 160px;
     padding: 0 20px;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    height: 40px;
-    color: #4c4747;
+    height: 60px;
+    font-weight: 700;
+    color: #fff;
     background-color: #fff;
     border: 1px solid var(--gradient-purple-to-dark, #a511ca);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .nav-link {

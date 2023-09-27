@@ -106,7 +106,7 @@ const TagUser = () => {
     };
     return (
         <div className={cx("container_main")}>
-            <div className={cx("button")}>
+            <div className={cx("container_button")}>
                 <div
                     className={cx("one_button")}
                     onClick={handleOpenTabSelling}
@@ -132,14 +132,6 @@ const TagUser = () => {
                     >
                         My Asset
                     </button>
-                    <button
-                        className={cx(
-                            "btn_tag",
-                            openTabMyAsset ? "active" : "",
-                        )}
-                    >
-                        My Asset
-                    </button>
                 </div>
                 <div
                     className={cx("one_button")}
@@ -151,7 +143,7 @@ const TagUser = () => {
                         Created
                     </button>
                 </div>
-                <div
+                {/* <div
                     className={cx("one_button")}
                     onClick={handleOpenTabCollection}
                 >
@@ -163,14 +155,14 @@ const TagUser = () => {
                     >
                         Collection
                     </button>
-                </div>
-                <div className={cx("one_button")} onClick={handleOpenTabLike}>
+                </div> */}
+                {/* <div className={cx("one_button")} onClick={handleOpenTabLike}>
                     <button
                         className={cx("btn_tag", openTabLike ? "active" : "")}
                     >
                         Like
                     </button>
-                </div>
+                </div> */}
                 <div
                     className={cx("one_button")}
                     onClick={handleOpenTabFollowing}

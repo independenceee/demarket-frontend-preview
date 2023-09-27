@@ -7,13 +7,16 @@ import DropMenu from "../DropMenu";
 import Search from "../Search";
 
 import { BsSearch } from "react-icons/bs";
+import { LuSearch } from "react-icons/lu";
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 type SidebarProps = {};
 const Sidebar = ({}: SidebarProps) => {
     return (
-        <div className={styles.container_sidebar}>
-            <div className={styles.container_search}>
+        <div className={cx("container_sidebar")}>
+            <div className={cx("container_search")}>
                 <Search title="Search">
-                    <BsSearch />
+                    <LuSearch />
                 </Search>
             </div>
             <li>

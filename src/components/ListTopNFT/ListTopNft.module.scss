@@ -1,29 +1,52 @@
-.container_list{
+.container_list {
     overflow: hidden;
     position: relative;
-    .container_list_item{
+    .container_list_item {
         justify-content: center;
         display: flex;
         margin-bottom: 20px;
         gap: 20px; /* 10s là thời gian một chu kỳ chuyển động */
     }
-    margin: 20px;
 }
-@keyframes scrollImages1 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+// @keyframes scrollImages1 {
+//     0% {
+//         transform: translateX(0);
+//     }
+//     100% {
+//         transform: translateX(-100%);
+//     }
+// }
+
+// @keyframes scrollImages2 {
+//     0% {
+//         transform: translateX(0);
+//     }
+//     100% {
+//         transform: translateX(-200%); /* Chuyển động nhanh hơn so với list 1 */
+//     }
+// }
+@media screen and (max-width: 1200px) {
+    .container_list {
+        .container_list_item {
+            gap: 15px; /* 10s là thời gian một chu kỳ chuyển động */
+            margin-bottom: 15px;
+        }
+    }
 }
 
-@keyframes scrollImages2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-200%); /* Chuyển động nhanh hơn so với list 1 */
-  }
+@media screen and (max-width: 768px) {
+    .container_list {
+        .container_list_item {
+            gap: 10px; /* 10s là thời gian một chu kỳ chuyển động */
+            margin-bottom: 10px;
+        }
+    }
 }
-
+@media screen and (max-width: 540px) {
+    .container_list {
+        .container_list_item {
+            gap: 5px; /* 10s là thời gian một chu kỳ chuyển động */
+            margin-bottom: 5px;
+        }
+    }
+}

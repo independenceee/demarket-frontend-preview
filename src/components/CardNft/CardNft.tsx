@@ -10,9 +10,7 @@ import IconComponent from "@/components/Icon";
 import styles from "./CardNft.module.scss";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import classNames from "classnames/bind";
-
-
-
+import { verify } from "crypto";
 const cx = classNames.bind(styles);
 interface CardNftPros {
     id_nft: number;
@@ -24,6 +22,7 @@ interface CardNftPros {
     price_nft: number;
     policyid: string;
     status_verify: boolean;
+    // have_price:boolean,
 }
 const CardNft = ({
     id_nft,

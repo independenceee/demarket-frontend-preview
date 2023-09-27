@@ -1,7 +1,6 @@
 .container {
     width: 100%;
     padding-bottom: 20px;
-
     .row_data_header {
         border-bottom: 1px solid var(--font_color_dark);
         display: flex;
@@ -12,7 +11,6 @@
             font-weight: 700;
         }
     }
-
     .row_data {
         display: flex;
         justify-content: space-between;
@@ -35,6 +33,16 @@
             align-items: center;
             font-size: 12px;
             font-weight: 700;
+            input[type="radio"] {
+                width: 20px;
+                height: 20px;
+                border-radius: none;
+            }
+            input[type="radio"]:checked {
+                background-color: #007bff; /* Màu nền khi chọn */
+                color: #fff; /* Màu chữ khi chọn */
+                border-color: #007bff; /* Viền khi chọn */
+            }
         }
     }
     .row_data:hover {

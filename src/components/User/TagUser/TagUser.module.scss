@@ -1,27 +1,31 @@
 .container_main {
     max-width: 1100px;
-    .button {
+    .container_button {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        .btn_tag {
-            float: left;
-            padding: 0 20px;
-            margin-bottom: 20px;
-            margin-right: 30px;
-            height: 40px;
-            color: #4c4747;
-            background-color: #fff;
-            border: 1px solid;
-            border-radius: 30px;
-            &:hover {
+        overflow-x: auto; /* Hiển thị thanh cuộn ngang khi cần */
+        white-space: nowrap; /* Ngăn text bị ngắt dòng */
+        max-width: 1100px;
+        .one_button {
+            width: 120px;
+            margin: 0 15px 15px 0;
+            font-size: var(--font_size_title);
+            .btn_tag {
+                width: 100%;
+                padding: 0 20px;
+                height: 40px;
+                color: #4c4747;
+                background-color: #fff;
+                border: 1px solid;
+                border-radius: 30px;
+                &:hover {
+                    color: var(--gradient-purple-to-dark, #a511ca);
+                    border: 1px solid var(--gradient-purple-to-dark, #a511ca);
+                }
+            }
+            .btn_tag.active {
                 color: var(--gradient-purple-to-dark, #a511ca);
                 border: 1px solid var(--gradient-purple-to-dark, #a511ca);
             }
-        }
-        .btn_tag.active {
-            color: var(--gradient-purple-to-dark, #a511ca);
-            border: 1px solid var(--gradient-purple-to-dark, #a511ca);
         }
     }
 }
@@ -40,15 +44,26 @@
 
 @media screen and (max-width: 1130px) {
     .container_main {
-        .button {
+        .container_button {
+            margin-bottom: 15px;
             max-width: 540px;
+            .one_button {
+                width: 120px;
+                .btn_tag {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
 @media screen and (max-width: 554px) {
     .container_main {
-        .button {
+        .container_button {
+            margin: 0 auto;
             max-width: 260px;
+            .one_button {
+                width: 100px;
+            }
         }
     }
 }

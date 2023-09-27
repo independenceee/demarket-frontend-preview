@@ -6,7 +6,7 @@
         width: 100%;
         .background_container_image {
             width: 100%;
-            height: 660px;
+            height: 66rem;
             img {
                 width: 100%;
                 height: 100%;
@@ -17,10 +17,10 @@
             position: absolute;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 3rem;
             width: 35%;
             top: 30%;
-            margin-left: 80px;
+            margin-left: 8rem;
             color: var(--background_white);
             h1 {
                 font-size: var(--font_size_h1);
@@ -32,7 +32,7 @@
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                gap: 20px;
+                gap: 2rem;
                 a {
                     display: block;
                     width: fit-content;
@@ -42,19 +42,19 @@
             @media screen and (max-width: 1024px) {
                 top: 25%;
                 h1 {
-                    font-size: 22px;
+                    font-size: 2.2rem;
                 }
                 p {
-                    font-size: 12px;
+                    font-size: 1.2rem;
                 }
             }
             @media screen and (max-width: 768px) {
                 top: 15%;
                 h1 {
-                    font-size: 20px;
+                    font-size: 2rem;
                 }
                 p {
-                    font-size: 10px;
+                    font-size: 1rem;
                 }
             }
         }

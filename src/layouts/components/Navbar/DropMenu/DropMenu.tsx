@@ -5,6 +5,8 @@ import { useState } from "react";
 import React from "react";
 import styles from "./DropMenu.module.scss";
 import { IoMdArrowDropdown } from "react-icons/io";
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 interface DropMenuPros {}
 const DropMenu = ({}: DropMenuPros) => {
     const [openDropMenu, setOpenDropMenu] = useState(false);
@@ -25,12 +27,12 @@ const DropMenu = ({}: DropMenuPros) => {
         },
     ];
     return (
-        <div className={styles.container_dropmenu}>
+        <div className={cx("container_dropmenu")}>
             <li onClick={handleOpenDrop}>
                 More <IoMdArrowDropdown />
             </li>
             {openDropMenu && (
-                <div className={styles.box_dropmenu}>
+                <div className={cx("box_dropmenu")}>
                     {dropmenus.map((dropmenu) => {
                         return (
                             <li key={dropmenu.id}>

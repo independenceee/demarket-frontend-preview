@@ -4,66 +4,67 @@ import { useState, useEffect } from "react";
 import styles from "./ListTopNft.module.scss";
 import images from "@/assets/images";
 import TopNftItem from "./TopNftItem/TopNftItem";
+import MoreNext from "../MoreNext/MoreNext";
 
 const ListTopNft = () => {
     const list_1 = [
         {
             key: 1,
-            src: images.logo,
+            src: images.NFT_1,
         },
         {
             key: 2,
-            src: images.logo,
+            src: images.NFT_2,
         },
         {
             key: 3,
-            src: images.logo,
+            src: images.NFT_3,
         },
         {
             key: 4,
-            src: images.logo,
+            src: images.NFT_4,
         },
         {
             key: 5,
-            src: images.logo,
+            src: images.NFT_5,
         },
         {
             key: 6,
-            src: images.logo,
+            src: images.NFT_6,
         },
         {
             key: 7,
-            src: images.logo,
+            src: images.NFT_7,
         },
     ];
     const list_2 = [
         {
             key: 1,
-            src: images.logo,
+            src: images.NFT_8,
         },
         {
             key: 2,
-            src: images.logo,
+            src: images.NFT_9,
         },
         {
             key: 3,
-            src: images.logo,
+            src: images.NFT_10,
         },
         {
             key: 4,
-            src: images.logo,
+            src: images.NFT_11,
         },
         {
             key: 5,
-            src: images.logo,
+            src: images.NFT_12,
         },
         {
             key: 6,
-            src: images.logo,
+            src: images.NFT_13,
         },
         {
             key: 7,
-            src: images.logo,
+            src: images.NFT_14,
         },
     ];
     const [animation1Enabled, setAnimation1Enabled] = useState(true);
@@ -107,6 +108,7 @@ const ListTopNft = () => {
                     );
                 })}
             </div>
+            <MoreNext />
         </div>
     );
 };

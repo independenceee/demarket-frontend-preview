@@ -1,15 +1,15 @@
-"use client";
-
 import React from "react";
 import images from "@/assets/images";
 import styles from "./ListCollection.module.scss";
 import CollectionOne from "./CollectionOne";
+import classNames from "classnames/bind";
+import MoreNext from "../MoreNext/MoreNext";
+const cx = classNames.bind(styles);
 const ListCollection = () => {
     const collections = [
         {
             id: 1,
-            image: images.logo,
-            usename: "USER 1",
+            image: images.User_1,
             volume_trace: 100,
             number_item: 110,
             price: 500,
@@ -17,7 +17,7 @@ const ListCollection = () => {
         },
         {
             id: 2,
-            image: images.logo,
+            image: images.User_2,
             usename: "USER 2",
             volume_trace: 100,
             number_item: 110,
@@ -26,7 +26,7 @@ const ListCollection = () => {
         },
         {
             id: 3,
-            image: images.logo,
+            image: images.User_3,
             usename: "USER 3",
             volume_trace: 100,
             number_item: 110,
@@ -35,7 +35,7 @@ const ListCollection = () => {
         },
         {
             id: 4,
-            image: images.logo,
+            image: images.User_4,
             usename: "USER 4",
             volume_trace: 100,
             number_item: 110,
@@ -44,7 +44,7 @@ const ListCollection = () => {
         },
         {
             id: 5,
-            image: images.logo,
+            image: images.User_5,
             usename: "USER 5",
             volume_trace: 100,
             number_item: 110,
@@ -53,7 +53,7 @@ const ListCollection = () => {
         },
         {
             id: 6,
-            image: images.logo,
+            image: images.User_6,
             usename: "USER 6",
             volume_trace: 100,
             number_item: 110,
@@ -62,7 +62,7 @@ const ListCollection = () => {
         },
         {
             id: 7,
-            image: images.logo,
+            image: images.User_7,
             usename: "USER 7",
             volume_trace: 100,
             number_item: 110,
@@ -71,8 +71,8 @@ const ListCollection = () => {
         },
     ];
     return (
-        <div className={styles.container_listcollection}>
-            <table className={`table ${styles.table_changebgcolor}`}>
+        <div className={cx("container_listcollection")}>
+            <table className={cx("table", "table_changebgcolor")}>
                 <thead>
                     <tr>
                         <th scope="col">Avatar</th>
@@ -99,6 +99,7 @@ const ListCollection = () => {
                     })}
                 </tbody>
             </table>
+            <MoreNext />
         </div>
     );
 };

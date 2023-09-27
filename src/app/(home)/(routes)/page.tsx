@@ -18,8 +18,7 @@ const Home = function ({}: Props) {
     return (
         <div className={cx("main_home")}>
             <Background
-                image_src={images.background}
-                image_width={1500}
+                image_src={images.BG_1}
                 image_height={640}
                 image_alt="BackGround"
                 title="Examples For Creating Solid UX Design"

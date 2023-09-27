@@ -6,12 +6,11 @@ import SideBarLeft from "@/layouts/components/SidebarLeft";
 import TagUser from "@/components/User/TagUser/TagUser";
 import Follower from "@/components/ListFollower/ListFollower";
 import classNames from "classnames/bind";
-
 const cx = classNames.bind(styles);
 const Account = () => {
     const userInfo = {
-        image_bg: images.logo,
-        image_av: images.logo,
+        image_bg: images.BG_1,
+        image_av: images.NFT_12,
         user_name: "TienTung",
         sologan: "Nguyen Tien Tung",
         link_face: "/facebook.com",

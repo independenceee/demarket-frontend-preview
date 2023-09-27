@@ -40,12 +40,8 @@ const DetailInfo = ({
     return (
         <div className={cx("container")}>
             <div className={cx("container_detail_info_general")}>
-                <h1>{name_nft}</h1>
                 <div className={cx("container_detail_info_one_row")}>
-                    <div className={cx("left")}>
-                        <span>Type: </span>
-                        <span>{metadatatype}</span>
-                    </div>
+                    <h1>{name_nft}</h1>{" "}
                     <div className={cx("right")}>
                         <span>
                             <AiOutlineEye />
@@ -55,6 +51,12 @@ const DetailInfo = ({
                             <AiOutlineHeart />
                             {number_hearts}
                         </span>
+                    </div>
+                </div>
+                <div className={cx("container_detail_info_one_row")}>
+                    <div className={cx("left")}>
+                        <span>Type: </span>
+                        <span>{metadatatype}</span>
                     </div>
                 </div>
                 <div className={cx("container_detail_info_one_row")}>

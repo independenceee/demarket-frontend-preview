@@ -1,6 +1,8 @@
-.container_notify{
+.container_notify {
+    width: 40px;
+    height: 40px;
     position: relative;
-    .notify_display{
+    .notify_display {
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -10,21 +12,25 @@
         background-color: var(--backgroundcolor_60);
         border: var(--border_input);
         border-radius: var(--border_radius_20);
-        top: 40px;
-        left:-10px;
-        .notify_row{
+        top: 60px;
+        left: -40px;
+        .notify_row {
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             padding: 10px 20px;
             align-items: center;
-            
-            p{
+
+            p {
                 margin: 0;
             }
-            &:hover{
+            &:hover {
                 background-color: var(--backgroundcolor_30);
             }
         }
+    }
+    .notify_icon {
+        width: 40px;
+        height: 40px;
     }
 }

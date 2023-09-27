@@ -2,13 +2,14 @@
     width: 100%;
     margin: 0 auto;
     .container_body {
-        max-width: 1500px;
+        position: relative;
+        // max-width: 1500px;
         display: flex;
         justify-content: space-between;
         margin: 50px auto;
         .container_list {
             max-width: 1110px;
-            // margin: auto;
+            margin: auto;
             .popular_collector {
                 width: 100%;
                 h2 {
@@ -27,6 +28,7 @@
 @media screen and (max-width: 1470px) {
     .container {
         .container_body {
+            position: relative;
             justify-content: center;
             .container_list {
                 margin: 0 auto;

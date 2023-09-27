@@ -13,6 +13,7 @@ import { SlUserFollow } from "react-icons/sl";
 import { BiCopyAlt } from "react-icons/bi";
 import { Data } from "lucid-cardano";
 import IconComponent from "@/components/Icon";
+import classNames from "classnames/bind";
 interface InfoDataProps {
     data: {
         policy: string;
@@ -24,6 +25,7 @@ interface InfoDataProps {
         joined: Date;
     };
 }
+const cx = classNames.bind(styles);
 const InfoData = ({ data }: InfoDataProps) => {
     const currentDate = data.joined;
     const formattedDate = `${currentDate.getDate()}/${
@@ -31,77 +33,77 @@ const InfoData = ({ data }: InfoDataProps) => {
     }/${currentDate.getFullYear()}`;
     const formattedTime = `${currentDate.getHours()}:${currentDate.getMinutes()}`;
     return (
-        <div className={styles.container}>
-            <div className={styles.row_data_header}>
+        <div className={cx("container")}>
+            <div className={cx("row_data_header")}>
                 <h1>Introduce</h1>
                 <IoMdArrowDropdown />
             </div>
-            <div className={styles.row_data}>
-                <div className={styles.left_data}>
+            <div className={cx("row_data")}>
+                <div className={cx("left_data")}>
                     <TfiIdBadge />
                     <span>Policy</span>
                 </div>
-                <div className={styles.right_data}>
+                <div className={cx("right_data")}>
                     <span>{data.policy}</span>
                     <IconComponent>
                         <BiCopyAlt />
                     </IconComponent>
                 </div>
             </div>
-            <div className={styles.row_data}>
-                <div className={styles.left_data}>
+            <div className={cx("row_data")}>
+                <div className={cx("left_data")}>
                     <GrKey />
                     <span>Stake Key</span>
                 </div>
-                <div className={styles.right_data}>
+                <div className={cx("right_data")}>
                     <span>{data.stake_key}</span>
                     <IconComponent>
                         <BiCopyAlt />
                     </IconComponent>
                 </div>
             </div>
-            <div className={styles.row_data}>
-                <div className={styles.left_data}>
+            <div className={cx("row_data")}>
+                <div className={cx("left_data")}>
                     <AiOutlineFileImage />
                     <span>NFTs</span>
                 </div>
-                <div className={styles.right_data}>
+                <div className={cx("right_data")}>
                     <span>{data.numbers_nft}</span>
                 </div>
             </div>
-            <div className={styles.row_data}>
-                <div className={styles.left_data}>
+            <div className={cx("row_data")}>
+                <div className={cx("left_data")}>
                     <GrTransaction />
                     <span>NFTs Selled</span>
                 </div>
-                <div className={styles.right_data}>
+                <div className={cx("right_data")}>
                     <span>{data.nfts_selled}</span>
                 </div>
             </div>
-            <div className={styles.row_data}>
-                <div className={styles.left_data}>
+            <div className={cx("row_data")}>
+                <div className={cx("left_data")}>
                     <SlUserFollow />
                     <span>Followers</span>
                 </div>
-                <div className={styles.right_data}>
+                <div className={cx("right_data")}>
                     <span>{data.followers}</span>
                 </div>
             </div>
-            <div className={styles.row_data}>
-                <div className={styles.left_data}>
+            <div className={cx("row_data")}>
+                <div className={cx("left_data")}>
                     <AiOutlineStar />
                     <span>Rating</span>
                 </div>
-                <div className={styles.right_data}>
+                <div className={cx("right_data")}>
                     <span>{data.rating}</span>
                 </div>
             </div>
-            <div className={styles.row_data}>
-                <div className={styles.left_data}>
+            <div className={cx("row_data")}>
+                <div className={cx("left_data")}>
                     <AiOutlineFieldTime />
                     <span>Time Joined</span>
                 </div>
-                <div className={styles.Time}>
+                <div className={cx("Time")}>
                     <span>
                         {formattedDate} {formattedTime}
                     </span>

@@ -13,12 +13,7 @@ interface props {
 const DetailNFT = ({ image_nft }: props) => {
     return (
         <div className={cx("container_image")}>
-            <Image
-                src={image_nft}
-                width={716}
-                height={912}
-                alt="NFT image Detail"
-            />
+            <Image src={image_nft} alt="NFT image Detail" />
             <div className={cx("cardnft_container_image_icon")}>
                 <IconComponent>
                     <AiOutlineEye />

@@ -1,4 +1,6 @@
 .cardnft_container {
+    color: var(--font_color_dark);
+    font-size: var(--font_size_title);
     width: 260px;
     border-radius: 20px;
     border: 0.5px solid #8f04a6;
@@ -78,6 +80,7 @@
                     padding-left: 10px;
                     justify-content: center;
                     align-items: center;
+                    font-weight: 700;
                 }
             }
             .cardnft_container_info_auth_price {
@@ -114,8 +117,3 @@
     box-shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
     border: none;
 }
-// @media screen and (max-width:768px) {
-//   .cardnft_container{
-//     width: 100%;
-//   }
-// }

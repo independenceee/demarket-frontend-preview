@@ -7,14 +7,12 @@ import styles from "./Marketplace.module.scss";
 import Title from "@/components/Title";
 import classNames from "classnames/bind";
 import ListFollower from "@/components/ListFollower/ListFollower";
-import Pagination from "@/components/Pagination/Pagination";
-
 const cx = classNames.bind(styles);
 const page = () => {
     return (
         <div className={cx("container")}>
             <Background
-                image_src={images.background}
+                image_src={images.BG_1}
                 image_width={1500}
                 image_height={640}
                 image_alt="BackGround"

@@ -20,8 +20,8 @@ const TopNftItem = ({ image, classname }: TopNftItemProps) => {
                 <div className={styles.container_images}>
                     <Image
                         src={image}
-                        width={360}
-                        height={224}
+                        // width={360}
+                        // height={224}
                         alt="TopNFT"
                     ></Image>
                 </div>

@@ -12,6 +12,8 @@ import {
     BiLogOut,
 } from "react-icons/bi";
 import Icon from "@/components/Icon";
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 interface UserProps {
     // openUserProp:boolean,
     // handleOpenUser:()=>void
@@ -25,61 +27,61 @@ const User = ({}: UserProps) => {
         setOpenBackAvatar(!openBackAvatar);
     };
     return (
-        <div className={styles.container_user}>
+        <div className={cx("container_user")}>
             {useUnLog ? (
-                <div className={styles.container_user_unlog}>
+                <div className={cx("container_user_unlog")}>
                     <Icon>
                         <BiSolidUserCircle />
                     </Icon>
                     <span>{"9"}</span>
                 </div>
             ) : (
-                <div className={styles.container_user_log}>
+                <div className={cx("container_user_log")}>
                     <div
-                        className={styles.container_avatar_display}
+                        className={cx("container_avatar_display")}
                         onClick={handleOpenBGAvatar}
                     >
                         <Image
-                            src={images.background}
+                            src={images.BG_1}
                             width={400}
                             height={300}
                             alt="Avatar"
                         />
                     </div>
                     {openBackAvatar && (
-                        <div className={styles.container_fullback}>
-                            <div className={styles.container_background}>
+                        <div className={cx("container_fullback")}>
+                            <div className={cx("container_background")}>
                                 <Image
-                                    src={images.background}
+                                    src={images.BG_2}
                                     width={300}
                                     height={400}
                                     alt="BackGround User"
                                 />
-                                <div className={styles.container_avatar}>
+                                <div className={cx("container_avatar")}>
                                     <Image
-                                        src={images.background}
+                                        src={images.BG_1}
                                         width={400}
                                         height={300}
                                         alt="Avatar"
                                     />
                                 </div>
-                                <div className={styles.user_name}>
+                                <div className={cx("user_name")}>
                                     @ <span>{"User_Name"}</span>
                                 </div>
                             </div>
 
-                            <div className={styles.detail_info}>
-                                <div className={styles.row_info}>
+                            <div className={cx("detail_info")}>
+                                <div className={cx("row_info")}>
                                     <span>Wallet</span>
                                     <span>
                                         {"qhut0...hfteh45"} <BiCopyAlt />
                                     </span>
                                 </div>
-                                <div className={styles.row_info}>
+                                <div className={cx("row_info")}>
                                     <span>Balance</span>
                                     <span>{"1321.1241"} </span>
                                 </div>
-                                <div className={styles.row_info}>
+                                <div className={cx("row_info")}>
                                     <span>Account</span>
                                     <span>
                                         <Icon>
@@ -87,7 +89,7 @@ const User = ({}: UserProps) => {
                                         </Icon>
                                     </span>
                                 </div>
-                                <div className={styles.row_info}>
+                                <div className={cx("row_info")}>
                                     <span>Edit Profile</span>
                                     <span>
                                         <Icon>
@@ -95,7 +97,7 @@ const User = ({}: UserProps) => {
                                         </Icon>
                                     </span>
                                 </div>
-                                <div className={styles.row_info}>
+                                <div className={cx("row_info")}>
                                     <span>Log Out</span>
                                     <span>
                                         <Icon>

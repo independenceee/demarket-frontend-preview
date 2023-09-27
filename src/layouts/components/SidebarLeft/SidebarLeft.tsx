@@ -116,10 +116,10 @@ const SideBarLeft = ({
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            if (scrollY >= 728) {
+            if (scrollY >= 837) {
                 setIsFixedTop(true);
             }
-            if (scrollY < 728) {
+            if (scrollY < 837) {
                 setIsFixedTop(false);
             }
         };
@@ -134,9 +134,6 @@ const SideBarLeft = ({
 
     return (
         <div className={cx("container")}>
-            <div className={cx("button_filter")} onClick={handleOpenSibarLeft}>
-                <HiOutlineFilter />
-            </div>
             {openSibarLeft && (
                 <div
                     className={cx(

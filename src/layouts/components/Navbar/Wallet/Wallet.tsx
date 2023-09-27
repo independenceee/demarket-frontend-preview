@@ -3,7 +3,8 @@ import React from "react";
 import { Lucid } from "lucid-cardano";
 import styles from "./Wallet.module.scss";
 import { IoMdArrowDropdown } from "react-icons/io";
-
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 const Wallet = function () {
     const handleConnectWallet = async () => {
         try {
@@ -28,12 +29,12 @@ const Wallet = function () {
     }
 
     return (
-        <div className={styles.container_wallet}>
+        <div className={cx("container_wallet")}>
             <button
                 onClick={handleConnectWallet}
-                className={styles.connectwallet}
+                className={cx("connectwallet")}
             >
-                ConnectWallet <IoMdArrowDropdown />
+                Wallet <IoMdArrowDropdown />
             </button>
         </div>
     );

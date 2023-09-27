@@ -16,16 +16,38 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import ListHistory from "@/components/TrackHistory/ListHistory";
 import ListNft from "@/components/ListNft";
 import ContainerList from "@/components/ContainerList";
-import { DetailNFT, DetailTab, DetailInfo } from "@/components/Detail";
+import { DetailNFT, DetailTab } from "@/components/Detail";
+import DetailInfo from "@/components/Detail/DetailInfo/DetailInfo";
 
 const cx = classNames.bind(styles);
-
+interface DetaiNftPageProps {
+    product: {
+        id?: number;
+        image_nft?: StaticImport;
+        image_user?: StaticImport;
+        image_creater?: StaticImport;
+        name_creater?: string;
+        name_nft?: string;
+        name_user?: string;
+        metadatatype?: string;
+        price_nft?: string;
+        policyid?: string;
+        fingerprint?: string;
+        number_hearts?: number;
+        number_see?: number;
+        time_buy?: Date;
+        decription?: string;
+        asset_name?: string;
+        utxo?: string;
+        wallet_address?: string;
+    };
+}
 const DetaiNft = function () {
     const product = {
         id: 0,
-        image_nft: images.logo,
-        image_user: images.logo,
-        image_creater: images.logo,
+        image_nft: images.NFT_11,
+        image_user: images.User_1,
+        image_creater: images.User_1,
         name_creater: "user 1",
         name_nft: "NFT 1",
         name_user: "User 1", //owner
@@ -44,6 +66,7 @@ const DetaiNft = function () {
     return (
         <div className={cx("container")}>
             <div className={cx("detail_container")}>
+                {/* <h1>Detail NFT</h1> */}
                 <div className={cx("detai_left")}>
                     <DetailNFT image_nft={product.image_nft} />
                 </div>

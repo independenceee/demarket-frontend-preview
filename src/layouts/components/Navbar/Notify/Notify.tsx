@@ -7,6 +7,8 @@ import React from "react";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import Icon from "@/components/Icon";
 import styles from "./Notify.module.scss";
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 interface NotifyProps {
     // openNotifyProp:boolean,
 }
@@ -43,17 +45,17 @@ const Notify = ({}: NotifyProps) => {
         },
     ];
     return (
-        <div className={styles.container_notify} onClick={handleOpenNotify}>
-            <div className={styles.notify_icon}>
+        <div className={cx("container_notify")} onClick={handleOpenNotify}>
+            <div className={cx("notify_icon")}>
                 <Icon>
                     <IoMdNotificationsOutline />
                 </Icon>
             </div>
             {openNotify && (
-                <div className={styles.notify_display}>
+                <div className={cx("notify_display")}>
                     {notifies.map((notifi) => {
                         return (
-                            <div key={notifi.id} className={styles.notify_row}>
+                            <div key={notifi.id} className={cx("notify_row")}>
                                 <p>{notifi.content}</p>
                                 <span>{notifi.status}</span>
                             </div>

@@ -1,18 +1,29 @@
-.container_history{
+.container_history {
     width: 100%;
     display: flex;
     margin: 10px 0;
-    .container_image{
+    .container_image {
         margin: 10px;
     }
-    .container_info{
+    .container_info {
+        color: var(--font_color_dark);
         width: 100%;
         margin: 0 20px;
-        .container_row{
+        .container_row {
             display: flex;
             justify-content: space-between;
-            span:nth-child(2){
+            span:first-of-type {
                 font-weight: 600;
+            }
+            span:nth-child(2) {
+                font-weight: 600;
+                font-size: var(--font_size_title);
+            }
+            &:last-child {
+                span {
+                    font-style: italic;
+                    font-weight: normal;
+                }
             }
         }
     }
