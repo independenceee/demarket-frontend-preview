@@ -9,6 +9,9 @@ import Search from "../Search";
 import { BsSearch } from "react-icons/bs";
 import { LuSearch } from "react-icons/lu";
 import classNames from "classnames/bind";
+import Notify from "../Notify";
+import User from "../User";
+import Wallet from "../Wallet";
 const cx = classNames.bind(styles);
 type SidebarProps = {};
 const Sidebar = ({}: SidebarProps) => {
@@ -29,6 +32,17 @@ const Sidebar = ({}: SidebarProps) => {
                 <Link href={"/"}>Contact</Link>
             </li>
             <DropMenu />
+            <div className={styles.container_list}>
+                <div className={styles.container_notify}>
+                    <Notify />
+                </div>
+                <div className={styles.container_user}>
+                    <User />
+                </div>
+                <div className={styles.container_wallet}>
+                    <Wallet />
+                </div>
+            </div>
         </div>
     );
 };

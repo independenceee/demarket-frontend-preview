@@ -29,8 +29,6 @@
         }
     }
     .container_user_log {
-        // position: relative;
-
         .container_avatar_display {
             border: 2px solid var(--font_color_dark);
             width: 40px;
@@ -43,13 +41,23 @@
             }
         }
         .container_fullback {
-            border: 1px solid #fff;
+            z-index: 10000;
+            // position: relative;
+            .close_button {
+                position: absolute;
+                top: 10px;
+                right: 25px;
+                z-index: 1000;
+                width: 20px;
+                height: 20px;
+            }
+            position: absolute;
+            border: 1px solid #332929;
             overflow: hidden;
             top: 70px;
             right: 10px;
             width: 400px;
             z-index: 1000;
-            position: absolute;
             border-radius: var(--border_radius_20);
             background-color: var(--backgroundcolor_60);
             .container_background {
@@ -99,6 +107,83 @@
                     }
                     &:last-child {
                         border-top: var(--border);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    .container_user {
+        width: 100%;
+        justify-content: left;
+        .container_user_log {
+            .container_fullback {
+                position: relative;
+                border: 1px solid #fff;
+                top: 0;
+                right: 0;
+                width: 100%;
+                z-index: 1000;
+                border-radius: var(--border_radius_20);
+                background-color: var(--backgroundcolor_60);
+                .close_button {
+                    position: absolute;
+                    top: 10px;
+                    right: 25px;
+                    z-index: 1000;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .container_background {
+                    margin-bottom: 60px;
+                    position: relative;
+                    height: 200px;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .container_avatar {
+                        top: calc(100% - 35px);
+                        left: 5%;
+                        border: 1px solid #fff;
+                        position: absolute;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .user_name {
+                        font-weight: 700;
+                        position: absolute;
+                        top: 105%;
+                        left: 35%;
+                    }
+                }
+                .detail_info {
+                    display: flex;
+                    flex-direction: column;
+                    .row_info {
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px 40px 10px 40px;
+                        span:first-child {
+                            font-weight: 700;
+                        }
+                        &:hover {
+                            background-color: var(--backgroundcolor_30);
+                        }
+                        &:last-child {
+                            border-top: var(--border);
+                        }
                     }
                 }
             }

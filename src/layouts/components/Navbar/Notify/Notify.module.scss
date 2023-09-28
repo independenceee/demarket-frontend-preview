@@ -1,7 +1,11 @@
 .container_notify {
-    width: 40px;
-    height: 40px;
     position: relative;
+    height: 100%;
+    .close_button {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+    }
     .notify_display {
         overflow: hidden;
         display: flex;
@@ -11,7 +15,7 @@
         z-index: 1000;
         background-color: var(--backgroundcolor_60);
         border: var(--border_input);
-        border-radius: var(--border_radius_20);
+        border-radius: 10px;
         top: 60px;
         left: -40px;
         .notify_row {
@@ -32,5 +36,19 @@
     .notify_icon {
         width: 40px;
         height: 40px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .container_notify {
+        .close_button {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+        }
+        .notify_display {
+            top: 100%;
+            left: 0;
+            width: 100%;
+        }
     }
 }

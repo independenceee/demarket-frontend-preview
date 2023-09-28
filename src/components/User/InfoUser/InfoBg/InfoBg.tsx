@@ -43,7 +43,7 @@ const InfoBg = ({ user }: InfoBGProps) => {
                     </IconComponent>
                 </div>
                 <div className={cx("follow")}>
-                    <Button className="btn_config_default">Follow</Button>
+                    <Button className="primary">Follow</Button>
                 </div>
             </div>
             <div className={cx("description")}>

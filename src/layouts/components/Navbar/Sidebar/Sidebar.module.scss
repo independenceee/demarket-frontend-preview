@@ -1,17 +1,46 @@
 .container_sidebar {
-    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: auto;
     margin: 20px 0;
     li {
         display: flex;
         align-items: center;
         height: 30px;
         list-style: none;
-        padding: 20px 30px;
+        padding: 20px 0px;
         &:hover {
             background-color: var(--backgroundcolor_30);
+        }
+    }
+    .container_list {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        gap: 10px;
+        .container_wallet {
+            width: 140px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .container_sidebar {
+        .container_list {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    .container_sidebar {
+        .container_list {
+            width: 100%;
+            display: flex;
         }
     }
 }

@@ -13,7 +13,11 @@
     border: 1px solid var(--font_color_dark);
 }
 .icon_container:hover {
-    opacity: 0.5;
+    // opacity: 0.5;
+    &:hover {
+        color: #5900ff;
+        font-weight: bold;
+    }
 }
 // @media screen and (max-width: 768px) {
 //     .icon_container {

@@ -31,6 +31,7 @@
     }
     .container_sidebar {
         display: none;
+        padding-left: 20px;
     }
     .container_list {
         margin-left: auto;
@@ -45,7 +46,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 
@@ -104,8 +105,8 @@
         }
         .container_button_menu {
             display: block;
+            margin-right: 10px;
             .button_menu {
-                margin-right: 20px;
                 border: var(--border_input);
                 font-size: 18px;
                 color: var(--font_color_dark);
@@ -157,7 +158,27 @@
                 }
             }
             .container_button_menu {
-                margin: 0 3px;
+                .button_menu {
+                    margin-right: 0px;
+                }
+            }
+            gap: 0;
+            justify-content: space-between;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        .container_navbar {
+            .container_list {
+                display: none;
+                margin-left: auto;
+                width: 100%;
+                margin: 0;
+                gap: 3px;
+                .container_wallet {
+                    margin-right: 0;
+                }
+            }
+            .container_button_menu {
                 .button_menu {
                     margin-right: 0px;
                 }

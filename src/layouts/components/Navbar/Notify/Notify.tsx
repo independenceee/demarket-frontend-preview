@@ -17,6 +17,9 @@ const Notify = ({}: NotifyProps) => {
     const handleOpenNotify = function () {
         setOpenNotify(!openNotify);
     };
+    const handleCloseUser = function () {
+        if (openNotify === true) setOpenNotify(false);
+    };
     const notifies = [
         {
             id: 1,
@@ -53,6 +56,12 @@ const Notify = ({}: NotifyProps) => {
             </div>
             {openNotify && (
                 <div className={cx("notify_display")}>
+                    <div
+                        className={cx("close_button")}
+                        onClick={handleCloseUser}
+                    >
+                        <Icon>x</Icon>
+                    </div>
                     {notifies.map((notifi) => {
                         return (
                             <div key={notifi.id} className={cx("notify_row")}>

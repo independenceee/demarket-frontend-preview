@@ -10,9 +10,9 @@
             object-fit: cover;
         }
         .avatar {
-            margin-bottom: 20px;
-            left: 116px;
-            top: 75%;
+            // margin-bottom: 20px;
+            left: 6%;
+            bottom: -100px;
             position: absolute;
             border-radius: 100px;
             border: 5px solid var(--backgroundcolor_60);
@@ -34,7 +34,7 @@
         .follow {
             position: absolute;
             top: 130%;
-            left: 100px;
+            left: 6%;
         }
     }
     .description {
@@ -88,10 +88,10 @@
     .container {
         .background {
             .avatar {
-                top: 76%;
-                left: 125px;
-                width: 180px;
-                height: 180px;
+                bottom: -100px;
+                left: 6%;
+                width: 200px;
+                height: 200px;
             }
         }
         .description {
@@ -117,10 +117,10 @@
     .container {
         .background {
             .avatar {
-                top: 76%;
-                left: 125px;
-                width: 180px;
-                height: 180px;
+                bottom: -100px;
+                left: 6%;
+                width: 200px;
+                height: 200px;
             }
         }
         .description {
@@ -144,18 +144,18 @@
     .container {
         .background {
             .avatar {
-                top: 80%;
-                left: 65px;
+                bottom: -75px;
+                left: 6%;
                 width: 150px;
                 height: 150px;
             }
             .follow {
-                top: 125%;
-                left: 60px;
+                top: 123%;
+                left: 6%;
             }
         }
         .description {
-            height: 200px;
+            height: 160px;
             padding-left: 210px;
             .row_description {
                 .name {
@@ -177,29 +177,31 @@
     .container {
         .background {
             .avatar {
-                top: 87%;
-                left: 73px;
+                bottom: -50px;
+                left: 12%;
                 width: 100px;
                 height: 100px;
             }
             .follow {
+                width: 100px;
                 top: 115%;
-                left: 40px;
+                left: 6%;
             }
         }
         .description {
             height: 140px;
-            padding-left: 190px;
+            padding-left: 150px;
             .row_description {
                 .name {
+                    top: 100%;
                     h1 {
                         font-size: 20px;
-                        margin-left: 20px;
                     }
                 }
                 .contact {
                     margin: 20px;
                     display: flex;
+                    flex-direction: column;
                     gap: 10px;
                     .icon {
                         font-size: 20px;

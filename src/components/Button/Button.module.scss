@@ -3,7 +3,9 @@
     align-items: center;
     justify-content: center;
     // min-width: 100px;
-    padding: 18px 110px;
+    max-width: 200px;
+    width: 200px;
+    padding: 18px 20px;
     font-family: var(--font-family);
     cursor: pointer;
     color: #ebe6e6e5;
@@ -109,7 +111,7 @@
     min-width: 140px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .wrapper {
         display: inline-flex;
         align-items: center;
@@ -124,6 +126,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 12px;
+        width: 150px;
 
         background: linear-gradient(
             90deg,
@@ -146,7 +149,6 @@
         }
     }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 }
 

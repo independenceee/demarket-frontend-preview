@@ -11,6 +11,7 @@ import {
     BiEdit,
     BiLogOut,
 } from "react-icons/bi";
+import { GrFormPreviousLink } from "react-icons/gr";
 import Icon from "@/components/Icon";
 import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
@@ -23,8 +24,12 @@ interface UserProps {
 const User = ({}: UserProps) => {
     const [openBackAvatar, setOpenBackAvatar] = useState(false);
     const [useUnLog, setUserLog] = useState(false);
+
     const handleOpenBGAvatar = function () {
         setOpenBackAvatar(!openBackAvatar);
+    };
+    const handleCloseUser = function () {
+        if (openBackAvatar === true) setOpenBackAvatar(false);
     };
     return (
         <div className={cx("container_user")}>
@@ -50,6 +55,12 @@ const User = ({}: UserProps) => {
                     </div>
                     {openBackAvatar && (
                         <div className={cx("container_fullback")}>
+                            <div
+                                className={cx("close_button")}
+                                onClick={handleCloseUser}
+                            >
+                                <Icon>x</Icon>
+                            </div>
                             <div className={cx("container_background")}>
                                 <Image
                                     src={images.BG_2}

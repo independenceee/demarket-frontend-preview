@@ -57,6 +57,18 @@
                     font-size: 1rem;
                 }
             }
+            @media screen and (max-width: 480px) {
+                top: 15%;
+                left: 15%;
+                width: 70%;
+                margin-left: 0;
+                h1 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
     }
 
