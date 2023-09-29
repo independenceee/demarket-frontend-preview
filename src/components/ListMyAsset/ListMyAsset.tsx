@@ -94,22 +94,23 @@ const ListMyAsset = () => {
         },
     ];
     return (
-        <div className={styles.listnft_container_box}>
-            {NFTs.map((NFT) => {
-                return (
-                    <NftAsset
-                        key={NFT.id}
-                        id_nft={NFT.id}
-                        image_nft={NFT.image_nft}
-                        name_nft={`${NFT.name_nft}`}
-                        metadatatype={`${NFT.metadatatype}`}
-                        policyid={`${NFT.policyid}`}
-                        status_verify={NFT.status_verify}
-                    />
-                );
-            })}
+        <div className={cx("container")}>
+            <div className={styles.listnft_container_box}>
+                {NFTs.map((NFT) => {
+                    return (
+                        <NftAsset
+                            key={NFT.id}
+                            id_nft={NFT.id}
+                            image_nft={NFT.image_nft}
+                            name_nft={`${NFT.name_nft}`}
+                            metadatatype={`${NFT.metadatatype}`}
+                            policyid={`${NFT.policyid}`}
+                            status_verify={NFT.status_verify}
+                        />
+                    );
+                })}
+            </div>
             <MoreNext />
-            status_verify:true
         </div>
     );
 };

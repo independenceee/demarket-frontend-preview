@@ -9,6 +9,7 @@ import InfoData from "@/components/User/InfoUser/InfoData/InfoData";
 import { Fillter } from "@/components/User/InfoUser";
 import { HiOutlineFilter } from "react-icons/hi";
 import classNames from "classnames/bind";
+import { C } from "lucid-cardano";
 const cx = classNames.bind(styles);
 interface SibarLeftProps {
     sibar_left_user: boolean;
@@ -116,10 +117,10 @@ const SideBarLeft = ({
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            if (scrollY >= 837) {
+            if (scrollY >= 725) {
                 setIsFixedTop(true);
             }
-            if (scrollY < 837) {
+            if (scrollY < 725) {
                 setIsFixedTop(false);
             }
         };
@@ -134,6 +135,9 @@ const SideBarLeft = ({
 
     return (
         <div className={cx("container")}>
+            <div className={cx("button_filter")} onClick={handleOpenSibarLeft}>
+                <HiOutlineFilter />
+            </div>
             {openSibarLeft && (
                 <div
                     className={cx(

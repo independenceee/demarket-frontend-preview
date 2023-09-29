@@ -5,6 +5,8 @@ import images from "@/assets/images";
 import styles from "./ListFollowing.module.scss";
 import Following from "./Following/Following";
 import MoreNext from "../MoreNext/MoreNext";
+import classNames from "classnames/bind";
+const cx = classNames.bind(styles);
 interface ListFollowingProps {}
 const ListFollowing = ({}: ListFollowingProps) => {
     const Followers = [
@@ -66,19 +68,21 @@ const ListFollowing = ({}: ListFollowingProps) => {
         },
     ];
     return (
-        <div className={styles.listnft_container_box}>
-            {Followers.map((Fol) => {
-                return (
-                    <Following
-                        key={Fol.id_user}
-                        id_user={Fol.id_user}
-                        image_user={Fol.image_user}
-                        image_bg={Fol.image_bg}
-                        name_user={`${Fol.name_user}`}
-                        price={Fol.price}
-                    />
-                );
-            })}
+        <div className={cx("container")}>
+            <div className={cx("listnft_container_box")}>
+                {Followers.map((Fol) => {
+                    return (
+                        <Following
+                            key={Fol.id_user}
+                            id_user={Fol.id_user}
+                            image_user={Fol.image_user}
+                            image_bg={Fol.image_bg}
+                            name_user={`${Fol.name_user}`}
+                            price={Fol.price}
+                        />
+                    );
+                })}
+            </div>
             <MoreNext />
         </div>
     );

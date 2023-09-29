@@ -68,19 +68,21 @@ const ListFollower = ({}: ListFollowerProps) => {
         },
     ];
     return (
-        <div className={cx("listnft_container_box")}>
-            {Followers.map((Fol) => {
-                return (
-                    <Follower
-                        key={Fol.id_user}
-                        id_user={Fol.id_user}
-                        image_user={Fol.image_user}
-                        image_bg={Fol.image_bg}
-                        name_user={`${Fol.name_user}`}
-                        price={Fol.price}
-                    />
-                );
-            })}
+        <div className={cx("container")}>
+            <div className={cx("listnft_container_box")}>
+                {Followers.map((Fol) => {
+                    return (
+                        <Follower
+                            key={Fol.id_user}
+                            id_user={Fol.id_user}
+                            image_user={Fol.image_user}
+                            image_bg={Fol.image_bg}
+                            name_user={`${Fol.name_user}`}
+                            price={Fol.price}
+                        />
+                    );
+                })}
+            </div>
             <MoreNext />
         </div>
     );

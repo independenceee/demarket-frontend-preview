@@ -1,20 +1,45 @@
-.listnft_container_box {
-    // width:100%;
-    max-width: 1100px;
+.container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 30px auto;
-    // margin: 0 auto;
-}
-@media screen and (max-width: 1130px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .listnft_container_box {
-        gap: 20px;
-        max-width: 540px;
+        // width:100%;
+        max-width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin: 0 auto;
     }
-}
-@media screen and (max-width: 554px) {
-    .listnft_container_box {
-        max-width: 260px;
+    @media screen and (max-width: 1099px) {
+        .listnft_container_box {
+            gap: 10px;
+            width: 992px;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .listnft_container_box {
+            gap: 8px;
+            width: 768px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .listnft_container_box {
+            gap: 15px;
+            width: 540px;
+        }
+    }
+
+    @media screen and (max-width: 539px) {
+        .listnft_container_box {
+            width: 410px;
+            gap: 10px;
+        }
+    }
+    @media screen and (max-width: 440px) {
+        .listnft_container_box {
+            width: 405px;
+            gap: 5px;
+        }
     }
 }

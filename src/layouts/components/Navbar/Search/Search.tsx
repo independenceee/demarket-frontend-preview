@@ -15,6 +15,7 @@ const Search = ({ title, children }: SearchProps) => {
                 placeholder={`${title}`}
             />
             <button type="submit" className={cx("icon_search_nav")}>
+                <span>|</span>
                 {children}
             </button>
         </form>

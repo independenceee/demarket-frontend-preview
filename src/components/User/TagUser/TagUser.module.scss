@@ -42,11 +42,11 @@
     }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1099px) {
     .container_main {
         .container_button {
             margin-bottom: 15px;
-            max-width: 540px;
+            width: 992px;
             .one_button {
                 width: 120px;
                 .btn_tag {
@@ -56,13 +56,67 @@
         }
     }
 }
-@media screen and (max-width: 554px) {
+@media screen and (max-width: 991px) {
     .container_main {
         .container_button {
-            margin: 0 auto;
-            max-width: 260px;
+            margin-bottom: 15px;
+            width: 768px;
             .one_button {
-                width: 100px;
+                width: 120px;
+                .btn_tag {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .container_main {
+        .container_button {
+            margin-bottom: 15px;
+            width: 540px;
+            .one_button {
+                width: 104px;
+                .btn_tag {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 539px) {
+    .container_main {
+        .container_button {
+            margin-bottom: 15px;
+            width: 410px;
+            gap: 2px;
+            .one_button {
+                margin: 0 5px 5px 0;
+                width: 78px;
+                .btn_tag {
+                    font-size: 10px;
+                    padding: 0 10px;
+                    height: 30px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    .container_main {
+        .container_button {
+            margin-bottom: 15px;
+            width: 405px;
+            .one_button {
+                margin: 0 5px 5px 0;
+                width: 77px;
+                .btn_tag {
+                    font-size: 9px;
+                    padding: 0 8px;
+                    height: 30px;
+                    border-radius: 20px;
+                }
             }
         }
     }

@@ -21,13 +21,23 @@
         }
     }
     .icon_search_nav {
+        opacity: 0.7;
+        right: 20px;
         position: absolute;
         border: none;
         background-color: var(--backgroundcolor_30);
-        left: 10px;
-        font-size: var(--font_size_title);
+        font-size: var(--font_size_p);
         display: flex;
+        font-size: 16px;
         align-items: center;
+        &:hover {
+            color: #2600ff;
+        }
+        span {
+            display: flex;
+            padding-bottom: 3px;
+            margin-right: 5px;
+        }
     }
 }
 @media screen and (max-width: 1210px) {

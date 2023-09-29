@@ -19,7 +19,7 @@
     .container_search {
         margin: auto 0;
         height: 50px;
-        width: 300px;
+        width: 400px;
         display: flex;
         align-items: center;
     }
@@ -32,6 +32,7 @@
     .container_sidebar {
         display: none;
         padding-left: 20px;
+        padding-right: 20px;
     }
     .container_list {
         margin-left: auto;
