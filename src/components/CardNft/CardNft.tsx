@@ -65,12 +65,14 @@ const CardNft = ({
                 <div className={cx("cardnft_container_info_auth")}>
                     <div className={cx("cardnft_container_info_auth_use")}>
                         <div className={cx("user_image")}>
-                            <Image
-                                src={image_user}
-                                // width={200}
-                                // height={300}
-                                alt="User Avatar"
-                            />
+                            <Link href={"/account"}>
+                                <Image
+                                    src={image_user}
+                                    // width={200}
+                                    // height={300}
+                                    alt="User Avatar"
+                                />
+                            </Link>
                         </div>
                         <span>{name_user}</span>
                     </div>

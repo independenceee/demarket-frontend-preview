@@ -21,6 +21,8 @@ const page = () => {
                 name_Bg_Page="Home / Marketplace"
                 button1_name="Buy"
                 button2_name="Sell"
+                href_btn_1="account"
+                href_btn_2="marketplace"
             />
             <Title main="Home" slug="Market" />
             <div className={cx("container_body")}>

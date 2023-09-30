@@ -11,12 +11,13 @@ import IconComponent from "@/components/Icon";
 interface TopNftItemProps {
     image: StaticImageData;
     classname: string;
+    id: number;
 }
 
-const TopNftItem = ({ image, classname }: TopNftItemProps) => {
+const TopNftItem = ({ image, classname, id }: TopNftItemProps) => {
     return (
         <div className={`${styles.topNftItem_container} ${styles[classname]}`}>
-            <Link href={"#"}>
+            <Link href={"detail/" + id}>
                 <div className={styles.container_images}>
                     <Image
                         src={image}

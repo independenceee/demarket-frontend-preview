@@ -26,6 +26,8 @@ const Home = function ({}: Props) {
                 name_Bg_Page="Home"
                 button1_name="Explore"
                 button2_name="Getting Started"
+                href_btn_1="marketplace"
+                href_btn_2="guide"
             />
             <Title main="Home" />
             <ContainerList

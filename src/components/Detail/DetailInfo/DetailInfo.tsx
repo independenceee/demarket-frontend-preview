@@ -7,6 +7,7 @@ import { BiCopyAlt } from "react-icons/bi";
 import Button from "@/components/Button";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import Link from "next/link";
 interface props {
     name_nft?: string;
     policyid?: string;
@@ -80,12 +81,14 @@ const DetailInfo = ({
                         <h2>Owner</h2>
                         <div className={cx("owner_box")}>
                             <div className={cx("avatar")}>
-                                <Image
-                                    src={image_user}
-                                    // width={150}
-                                    // height={200}
-                                    alt="avatar"
-                                />
+                                <Link href={"/account"}>
+                                    <Image
+                                        src={image_user}
+                                        // width={150}
+                                        // height={200}
+                                        alt="avatar"
+                                    />
+                                </Link>
                             </div>
                             <div className={cx("info_owner")}>
                                 <h3>{name_user}</h3>
@@ -97,12 +100,14 @@ const DetailInfo = ({
                         <h2>Creator</h2>
                         <div className={cx("owner_box")}>
                             <div className={cx("avatar")}>
-                                <Image
-                                    src={image_creater}
-                                    // width={150}
-                                    // height={200}
-                                    alt="avatar"
-                                />
+                                <Link href={"/account"}>
+                                    <Image
+                                        src={image_user}
+                                        // width={150}
+                                        // height={200}
+                                        alt="avatar"
+                                    />
+                                </Link>
                             </div>
                             <div className={cx("info_owner")}>
                                 <h3>{name_creater}</h3>

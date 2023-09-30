@@ -10,7 +10,9 @@ interface AvatarProps {
 const Avatar = function ({ avatar }: AvatarProps) {
     return (
         <div className={styles.container_avatar}>
-            <Image src={avatar} width={150} height={200} alt="Avatar" />
+            <Link href={"/account"}>
+                <Image src={avatar} width={150} height={200} alt="Avatar" />
+            </Link>
         </div>
     );
 };

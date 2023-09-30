@@ -17,6 +17,8 @@ type Props = {
     name_Bg_Page?: string;
     button1_name?: string;
     button2_name?: string;
+    href_btn_1?: string;
+    href_btn_2?: string;
 };
 const Background = ({
     image_width,
@@ -28,6 +30,8 @@ const Background = ({
     name_Bg_Page,
     button1_name,
     button2_name,
+    href_btn_1,
+    href_btn_2,
 }: Props) => {
     return (
         <div className={cx("background_container")}>
@@ -45,10 +49,10 @@ const Background = ({
                     <h1>{title}</h1>
                     <p>{description}</p>
                     <div className={cx("background_content_button_container")}>
-                        <Link href="#">
+                        <Link href={"/" + href_btn_1}>
                             <Button className="primary">{button1_name}</Button>
                         </Link>
-                        <Link href="#">
+                        <Link href={"/" + href_btn_2}>
                             <Button className="primary">{button2_name}</Button>
                         </Link>
                     </div>

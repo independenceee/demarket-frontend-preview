@@ -24,7 +24,7 @@ const CollectionOne = ({
     return (
         <tr className={cx("container_row")}>
             <th scope="row">
-                <Link href={"#"}>
+                <Link href={"/account"}>
                     <Image
                         src={image}
                         width={50}
@@ -34,7 +34,7 @@ const CollectionOne = ({
                 </Link>
             </th>
             <td>
-                <Link href={"#"}>{usename}</Link>
+                <Link href={"/account"}>{usename}</Link>
             </td>
             <td>{number_item}</td>
             <td>{volume_trace}</td>

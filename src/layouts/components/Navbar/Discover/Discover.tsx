@@ -10,13 +10,13 @@ const Discover = ({}: DiscoverProps) => {
     return (
         <div className={styles.container_discover}>
             <li>
-                <Link href={"/"}>Explore</Link>
+                <Link href={"/marketplace"}>Explore</Link>
             </li>
             <li>
-                <Link href={"/"}>New</Link>
+                <Link href={"/guide"}>New</Link>
             </li>
             <li>
-                <Link href={"/"}>Contact</Link>
+                <Link href={"/about"}>Contact</Link>
             </li>
             <DropMenu />
         </div>

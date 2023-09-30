@@ -14,15 +14,15 @@ const DropMenu = ({}: DropMenuPros) => {
         setOpenDropMenu(!openDropMenu);
     };
     const dropmenus = [
-        { id: 1, link: "/Mint", title: "Mint" },
+        { id: 1, link: "/mint", title: "Mint" },
         {
             id: 2,
-            link: "/Guide",
+            link: "/guide",
             title: "Guide",
         },
         {
             id: 3,
-            link: "/About",
+            link: "/about",
             title: "About",
         },
     ];

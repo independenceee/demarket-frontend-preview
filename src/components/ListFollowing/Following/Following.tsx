@@ -27,12 +27,14 @@ const Following = ({
                     <Image src={image_bg} width={260} height={260} alt="BG" />
                 </Link>
                 <div className={styles.avatar}>
-                    <Image
-                        src={image_user}
-                        width={50}
-                        height={50}
-                        alt="Avatar"
-                    />
+                    <Link href={"/account"}>
+                        <Image
+                            src={image_user}
+                            width={50}
+                            height={50}
+                            alt="Avatar"
+                        />
+                    </Link>
                 </div>
             </div>
             <div className={styles.cardnft_container_info}>

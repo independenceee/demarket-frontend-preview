@@ -30,12 +30,14 @@ const Follower = ({
                     <Image src={image_bg} alt="BG" />
                 </Link>
                 <div className={cx("avatar")}>
-                    <Image
-                        src={image_user}
-                        width={50}
-                        height={50}
-                        alt="Avatar"
-                    />
+                    <Link href={"/account"}>
+                        <Image
+                            src={image_user}
+                            width={50}
+                            height={50}
+                            alt="Avatar"
+                        />
+                    </Link>
                 </div>
             </div>
             <div className={cx("cardnft_container_info")}>

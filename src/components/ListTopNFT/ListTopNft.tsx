@@ -92,6 +92,7 @@ const ListTopNft = () => {
                             key={NFT.key}
                             image={NFT.src}
                             classname="moveRightToLeft"
+                            id={NFT.key}
                         />
                     );
                 })}
@@ -104,6 +105,7 @@ const ListTopNft = () => {
                             key={NFT.key}
                             image={NFT.src}
                             classname="moveLeftToRight"
+                            id={NFT.key}
                         />
                     );
                 })}
