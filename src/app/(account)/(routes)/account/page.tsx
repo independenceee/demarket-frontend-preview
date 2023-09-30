@@ -12,7 +12,7 @@ const Account = () => {
         image_bg: images.BG_1,
         image_av: images.NFT_12,
         user_name: "TienTung",
-        sologan: "Nguyen Tien Tung",
+        sologan: "I want to attend college and law school.",
         link_face: "/facebook.com",
         link_twitter: "/twitter.com",
     };

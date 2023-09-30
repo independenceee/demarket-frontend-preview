@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1100px) {
     .container_main {
         .container_button {
             margin-bottom: 15px;
@@ -57,7 +57,7 @@
         }
     }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .container_main {
         .container_button {
             margin-bottom: 15px;
@@ -71,7 +71,7 @@
         }
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .container_main {
         .container_button {
             margin-bottom: 15px;
@@ -85,7 +85,7 @@
         }
     }
 }
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 534px) {
     .container_main {
         .container_button {
             margin-bottom: 15px;
@@ -107,13 +107,13 @@
 @media screen and (max-width: 440px) {
     .container_main {
         .container_button {
-            margin-bottom: 15px;
-            width: 405px;
+            margin-bottom: 12px;
+            width: 370px;
             .one_button {
-                margin: 0 5px 5px 0;
-                width: 77px;
+                margin: 0 4px 4px 0;
+                width: 74px;
                 .btn_tag {
-                    font-size: 9px;
+                    font-size: 8px;
                     padding: 0 8px;
                     height: 30px;
                     border-radius: 20px;

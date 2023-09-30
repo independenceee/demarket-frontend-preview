@@ -5,32 +5,32 @@
     align-items: center;
     .listnft_container_box {
         // width:100%;
-        max-width: 1100px;
+        width: 1100px;
         display: flex;
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 15px;
         margin: 0 auto;
     }
-    @media screen and (max-width: 1099px) {
+    @media screen and (max-width: 1100px) {
         .listnft_container_box {
             gap: 10px;
             width: 992px;
         }
     }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 992px) {
         .listnft_container_box {
             gap: 8px;
             width: 768px;
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         .listnft_container_box {
-            gap: 15px;
+            gap: 10px;
             width: 540px;
         }
     }
 
-    @media screen and (max-width: 539px) {
+    @media screen and (max-width: 540px) {
         .listnft_container_box {
             width: 410px;
             gap: 10px;
@@ -38,8 +38,9 @@
     }
     @media screen and (max-width: 440px) {
         .listnft_container_box {
-            width: 405px;
-            gap: 5px;
+            width: 370px;
+            gap: 10px;
+            margin: 0 auto;
         }
     }
 }

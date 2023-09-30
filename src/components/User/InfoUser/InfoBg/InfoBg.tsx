@@ -54,18 +54,18 @@ const InfoBg = ({ user }: InfoBGProps) => {
                             <HiOutlinePencilAlt />
                         </Link>
                     </div>
-                    <div className={cx("contact")}>
-                        <div className={cx("icon")}>
-                            <Link href={user.link_face}>
-                                {" "}
-                                <BiLogoFacebook />
-                            </Link>
-                        </div>
-                        <div className={cx("icon")}>
-                            <Link href={user.link_twitter}>
-                                <AiOutlineTwitter />
-                            </Link>
-                        </div>
+                </div>
+                <div className={cx("contact")}>
+                    <div className={cx("icon")}>
+                        <Link href={user.link_face}>
+                            {" "}
+                            <BiLogoFacebook />
+                        </Link>
+                    </div>
+                    <div className={cx("icon")}>
+                        <Link href={user.link_twitter}>
+                            <AiOutlineTwitter />
+                        </Link>
                     </div>
                 </div>
                 <div className={cx("sologan")}>{user.sologan}</div>
