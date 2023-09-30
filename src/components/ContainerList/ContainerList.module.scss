@@ -2,32 +2,75 @@
     width: 100%;
 
     h1 {
+        text-align: center;
+        font-size: var(--font_size_h1);
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 0;
+        margin: 0 auto;
     }
     p {
+        font-size: var(--font_size_p);
         font-size: var(--);
         width: 40%;
         margin: auto;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
         text-align: center;
     }
     .container_more {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.2rem;
+        font-size: 22px;
         color: rgba(124, 58, 237, 0.75);
         font-weight: 600;
-        margin: 2rem;
+        margin: 20px;
     }
 }
 @media screen and (max-width: 1200px) {
+    .containerList_container {
+        width: 100%;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        p {
+            width: 50%;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
+    .containerList_container {
+        width: 100%;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+        p {
+            width: 80%;
+        }
+    }
 }
 @media screen and (max-width: 480px) {
+    .containerList_container {
+        width: 100%;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+        }
+        p {
+            width: 90%;
+        }
+    }
 }

@@ -15,7 +15,7 @@ interface NotifyProps {
 const Notify = ({}: NotifyProps) => {
     const [openNotify, setOpenNotify] = useState(false);
     const handleOpenNotify = function () {
-        setOpenNotify(!openNotify);
+        setOpenNotify(false);
     };
     const handleCloseUser = function () {
         if (openNotify === true) setOpenNotify(false);

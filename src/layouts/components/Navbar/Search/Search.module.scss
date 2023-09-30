@@ -11,7 +11,7 @@
         background-color: var(--backgroundcolor_30);
         outline: none;
         border: var(--border_input);
-        padding-left: 30px;
+        padding-left: 20px;
         border-radius: 30px;
         font-size: var(--font_size_p);
         &:focus {
@@ -37,6 +37,7 @@
             display: flex;
             padding-bottom: 3px;
             margin-right: 5px;
+            font-size: 20px;
         }
     }
 }

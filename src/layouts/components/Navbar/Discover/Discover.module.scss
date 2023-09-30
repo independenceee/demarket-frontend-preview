@@ -1,8 +1,10 @@
 .container_discover {
+    margin-left: 100px;
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    letter-spacing: 1px;
     li {
         width: fit-content;
         font-size: var(--font_size_title);
@@ -12,6 +14,15 @@
         }
         &:hover {
             color: var(--font_color_purble_hover);
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .container_discover {
+        gap: 10px;
+        margin-left: 0;
+        li {
+            font-size: var(--font_size_p);
         }
     }
 }

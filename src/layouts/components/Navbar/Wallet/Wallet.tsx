@@ -34,7 +34,7 @@ const Wallet = function () {
                 onClick={handleConnectWallet}
                 className={cx("connectwallet")}
             >
-                Wallet <IoMdArrowDropdown />
+                ConnectWallet <IoMdArrowDropdown />
             </button>
         </div>
     );
