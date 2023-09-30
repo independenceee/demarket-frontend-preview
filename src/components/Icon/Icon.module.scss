@@ -19,8 +19,9 @@
         font-weight: bold;
     }
 }
-// @media screen and (max-width: 768px) {
-//     .icon_container {
-//         margin: 0 10px;
-//     }
-// }
+@media screen and (max-width: 540px) {
+    .icon_container {
+        width: 30px;
+        height: 30px;
+    }
+}

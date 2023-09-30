@@ -353,18 +353,21 @@
 }
 @media screen and (max-width: 440px) {
     .cardnft_container {
-        width: 180px;
+        width: 160px;
         border-radius: 15px;
 
         .cardnft_container_image {
             position: relative;
-            width: 170px;
-            height: 170px;
-            margin: 6px auto;
+            width: 150px;
+            height: 150px;
+            margin: 5px auto;
             box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.25);
             .cardnft_container_image_icon {
-                top: 6px;
+                top: 5px;
                 padding: 4px 4px;
+            }
+            img {
+                border-radius: 10px;
             }
         }
         .cardnft_container_info {
@@ -380,7 +383,7 @@
                     align-items: center;
                     margin: 8px 20px;
                     color: #8f04a6;
-                    font-weight: 700;
+                    font-weight: 600;
                 }
             }
             // .cardnft_container_info_auth {
@@ -432,11 +435,11 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin: 8px 0;
+                    margin: 4px 0;
                     gap: 4px;
                     span {
                         font-weight: normal;
-                        font-size: 10px;
+                        font-size: 8px;
                         opacity: 0.7;
                     }
                 }

@@ -13,9 +13,9 @@
             .popular_collector {
                 width: 100%;
                 h2 {
+                    font-size: var(--font_size_h3);
                     font-weight: 700;
-                    margin: 0;
-                    font-size: var(--font_size_h1);
+                    margin-bottom: 20px;
                     background-image: var(--linearcolor_befor_hover);
                     background-clip: text; /* Áp dụng gradient lên vùng chữ */
                     color: transparent;

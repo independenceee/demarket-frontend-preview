@@ -48,6 +48,7 @@
             }
         }
         .container_owner {
+            flex-wrap: wrap;
             margin-bottom: 20px;
             .owner {
                 display: flex;
@@ -61,6 +62,7 @@
                 .owner_box {
                     display: flex;
                     align-items: center;
+                    // justify-content: space-between;
                     .info_owner {
                         padding: 10px;
                         h3 {

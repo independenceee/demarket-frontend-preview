@@ -27,7 +27,8 @@
         width: auto;
         align-items: center;
         margin: auto 0;
-        margin-left: 40px;
+        margin-left: 100px;
+        margin-right: 20px;
     }
     .container_sidebar {
         display: none;
@@ -72,6 +73,7 @@
         .container_discover {
             font-size: 12px;
             font-weight: 500;
+            margin-left: 30x;
         }
         .container_logo {
             width: 200px;
@@ -82,7 +84,7 @@
             }
         }
         .container_search {
-            width: 220px;
+            width: 300px;
             height: 30px;
         }
         .container_wallet {
