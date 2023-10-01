@@ -33,10 +33,10 @@ const Mint = function ({}: Props) {
                         placeholder="Description of your item"
                     />
                     <Metadata />
-                    <Bill />
+                    {/* <Bill />
                     <div className={cx("mint")}>
                         <Button>Mint</Button>
-                    </div>
+                    </div> */}
                 </section>
                 <section className={cx("right")}>
                     <div className={cx("content")}>
@@ -44,6 +44,18 @@ const Mint = function ({}: Props) {
                         <NftItem />
                     </div>
                 </section>
+            </div>
+            <div className={cx("bill")}>
+                <Bill />
+                <div className={cx("checkbox-wrapper")}>
+                    <div className={cx("checkbox-input")}>
+                        <input type="checkbox" />
+                    </div>
+                    <h3>Are you sure want to mint Nft ?</h3>
+                </div>
+                <div className={cx("mint")}>
+                    <Button>Mint</Button>
+                </div>
             </div>
         </main>
     );

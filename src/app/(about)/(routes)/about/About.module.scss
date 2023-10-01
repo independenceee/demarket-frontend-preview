@@ -159,12 +159,17 @@
             }
         }
     }
-    .three-item {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-    .two-item {
-        grid-template-columns: 1fr;
-        gap: 60px;
+    .founder-wrapper {
+        .founder-container {
+            gap: 30px;
+            .three-item {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .two-item {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
     }
 }

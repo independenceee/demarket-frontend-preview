@@ -66,3 +66,27 @@
         line-height: 16px;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+
+        .container {
+            .background {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1535px) {
+}
+
+@media only screen and (min-width: 1536px) {
+}
