@@ -15,12 +15,13 @@
             display: flex;
             margin: 20px 0;
             span:first-child {
-                flex: 1;
+                flex: 2;
                 font-weight: 600;
             }
             span:nth-child(2) {
                 flex: 3;
-                font-size: 14px;
+                font-size: 12px;
+
                 font-style: italic;
                 padding-left: 20px;
             }
@@ -30,6 +31,9 @@
             margin: 20px 0;
             display: flex;
             font-style: italic;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 12px;
         }
     }
     .container_detail_info_one_row {
@@ -46,6 +50,24 @@
                         border-radius: 50%;
                     }
                 }
+            }
+        }
+    }
+    @media screen and (max-width: 540px) {
+        font-size: 12px;
+        .container_content {
+            .detail_information_row {
+                span:nth-child(2) {
+                    flex: 3;
+                    font-size: 10px;
+                    font-weight: 600;
+                    font-style: italic;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+            span.utxo {
+                font-size: 10px;
             }
         }
     }

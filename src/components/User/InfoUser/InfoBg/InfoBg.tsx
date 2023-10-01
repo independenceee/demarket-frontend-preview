@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./InfoBg.module.scss";
-import Button from "@/components/Button";
+import ButtonBorderLinear from "@/components/ButtonBorderLinear/ButtonBorderLinear";
 import IconComponent from "@/components/Icon";
 import {
     AiOutlineCamera,
@@ -42,8 +42,10 @@ const InfoBg = ({ user }: InfoBGProps) => {
                         <AiOutlineCamera />
                     </IconComponent>
                 </div>
-                <div className={cx("follow")}>
-                    <Button className="primary">Follow</Button>
+                <div className={cx("button")}>
+                    <ButtonBorderLinear className="border_linear">
+                        Follow
+                    </ButtonBorderLinear>
                 </div>
             </div>
             <div className={cx("description")}>

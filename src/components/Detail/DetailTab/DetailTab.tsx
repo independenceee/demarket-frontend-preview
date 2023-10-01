@@ -4,8 +4,8 @@ import { BiCopyAlt } from "react-icons/bi";
 import classNames from "classnames/bind";
 import ListHistory from "@/components/TrackHistory";
 import { GrFormNextLink } from "react-icons/gr";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Link from "next/link";
+import { IoCopyOutline } from "react-icons/io5";
 const cx = classNames.bind(styles);
 interface props {
     policyid?: string;
@@ -86,7 +86,7 @@ const DetailTab = ({
                         <div className={cx("detail_information_row")}>
                             <span>PolicyID:</span>
                             <span>
-                                {policyid} <BiCopyAlt />
+                                {policyid} <IoCopyOutline />
                             </span>
                         </div>
                         <div className={cx("detail_information_row")}>
@@ -115,7 +115,7 @@ const DetailTab = ({
                 >
                     <div className={cx("container_content")}>
                         <span className={cx("utxo")}>
-                            {utxo} <BiCopyAlt />
+                            {utxo} <IoCopyOutline />
                         </span>
                     </div>
                 </div>

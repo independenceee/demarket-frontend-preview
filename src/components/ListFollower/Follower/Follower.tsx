@@ -45,7 +45,11 @@ const Follower = ({
                     <span>{name_user}</span>
                     <span>{price}</span>
                 </div>
-                <ButtonBorderLinear>Follower</ButtonBorderLinear>
+                <div className={cx("button")}>
+                    <ButtonBorderLinear className="border_linear">
+                        Follow
+                    </ButtonBorderLinear>
+                </div>
             </div>
         </div>
     );

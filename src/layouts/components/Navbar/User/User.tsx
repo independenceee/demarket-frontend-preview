@@ -16,20 +16,21 @@ import Icon from "@/components/Icon";
 import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
 interface UserProps {
+    openUser: boolean;
     // openUserProp:boolean,
     // handleOpenUser:()=>void
 }
 // openUserUnLog:boolean,
 
-const User = ({}: UserProps) => {
+const User = ({ openUser }: UserProps) => {
     const [openBackAvatar, setOpenBackAvatar] = useState(false);
     const [useUnLog, setUserLog] = useState(false);
 
-    const handleOpenBGAvatar = function () {
-        setOpenBackAvatar(!openBackAvatar);
-    };
+    // const handleOpenBGAvatar = function () {
+    //     setOpenBackAvatar(openUser);
+    // };
     const handleCloseUser = function () {
-        if (openBackAvatar === true) setOpenBackAvatar(false);
+        if (openUser == true) setOpenBackAvatar(false);
     };
     return (
         <div className={cx("container_user")}>
@@ -42,18 +43,15 @@ const User = ({}: UserProps) => {
                 </div>
             ) : (
                 <div className={cx("container_user_log")}>
-                    <div
-                        className={cx("container_avatar_display")}
-                        onClick={handleOpenBGAvatar}
-                    >
+                    <div className={cx("container_avatar_display")}>
                         <Image
-                            src={images.BG_1}
-                            width={400}
-                            height={300}
+                            src={images.User_2}
+                            // width={400}
+                            // height={300}
                             alt="Avatar"
                         />
                     </div>
-                    {openBackAvatar && (
+                    {openUser && (
                         <div className={cx("container_fullback")}>
                             <div
                                 className={cx("close_button")}
@@ -64,15 +62,15 @@ const User = ({}: UserProps) => {
                             <div className={cx("container_background")}>
                                 <Image
                                     src={images.BG_2}
-                                    width={300}
-                                    height={400}
+                                    // width={300}
+                                    // height={400}
                                     alt="BackGround User"
                                 />
                                 <div className={cx("container_avatar")}>
                                     <Image
-                                        src={images.BG_1}
-                                        width={400}
-                                        height={300}
+                                        src={images.User_2}
+                                        // width={400}
+                                        // height={300}
                                         alt="Avatar"
                                     />
                                 </div>

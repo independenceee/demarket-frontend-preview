@@ -1,17 +1,14 @@
 .container_wallet {
     width: 100%;
     height: 100%;
-    button {
-        background-image: var(--linearcolor_befor_hover);
+    .connectwallet {
+        // background-image: var(--linearcolor_befor_hover);
+        color: var(--font_color_dark);
+        background-color: var(--backgroundcolor_30);
         width: 100%;
+        font-weight: 700;
         height: 100%;
         border-radius: 50px;
-        font-weight: 700;
         border: var(--border_input);
-        color: var(--backgroundcolor_60);
-        // background-color: var(--backgroundcolor_30);
-        // &:hover {
-        //     border: var(--border_hover);
-        // }
     }
 }

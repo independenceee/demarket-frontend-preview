@@ -61,6 +61,13 @@
             }
         }
     }
+    .button {
+        width: 94px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
 }
 .cardnft_container:hover {
     box-shadow: 4px 10px 4px 0px rgba(0, 0, 0, 0.25);
@@ -185,6 +192,11 @@
                     font-size: 12px;
                 }
             }
+        }
+        .button {
+            width: 68px;
+            height: 30px;
+            font-size: 10px;
         }
     }
 }

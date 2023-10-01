@@ -4,7 +4,9 @@ import styles from "./Following.module.scss";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
 import Image from "next/image";
+const cx = classNames.bind(styles);
 import ButtonBorderLinear from "@/components/ButtonBorderLinear/ButtonBorderLinear";
+import classNames from "classnames/bind";
 interface FollowingPros {
     id_user: number;
     image_user: StaticImageData;
@@ -42,7 +44,11 @@ const Following = ({
                     <span>{name_user}</span>
                     <span>{price}</span>
                 </div>
-                <ButtonBorderLinear>Unfollow</ButtonBorderLinear>
+                <div className={cx("button")}>
+                    <ButtonBorderLinear className="border_linear">
+                        Unfollow
+                    </ButtonBorderLinear>
+                </div>
             </div>
         </div>
     );

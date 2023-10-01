@@ -48,7 +48,7 @@ const DetaiNft = function () {
         image_nft: images.NFT_11,
         image_user: images.User_1,
         image_creater: images.User_1,
-        name_creater: "user 1",
+        name_creater: "User 1",
         name_nft: "NFT 1",
         name_user: "User 1", //owner
         metadatatype: "Gift",

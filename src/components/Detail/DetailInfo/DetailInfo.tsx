@@ -4,10 +4,11 @@ import styles from "./DetailInfo.module.scss";
 import classNames from "classnames/bind";
 import { AiOutlineEye, AiOutlineHeart } from "react-icons/ai";
 import { BiCopyAlt } from "react-icons/bi";
-import Button from "@/components/Button";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Link from "next/link";
+import { IoCopyOutline } from "react-icons/io5";
+import ButtonBorderLinear from "@/components/ButtonBorderLinear/ButtonBorderLinear";
 interface props {
     name_nft?: string;
     policyid?: string;
@@ -63,13 +64,13 @@ const DetailInfo = ({
                 <div className={cx("container_detail_info_one_row")}>
                     <div className={cx("left")}>
                         <span>PolicyID: </span>
-                        <span>{policyid}</span> <BiCopyAlt />
+                        <span>{policyid}</span> <IoCopyOutline />
                     </div>
                 </div>
                 <div className={cx("container_detail_info_one_row")}>
                     <div className={cx("left")}>
                         <span>FingerPrint: </span>
-                        <span>{fingerprint}</span> <BiCopyAlt />
+                        <span>{fingerprint}</span> <IoCopyOutline />
                     </div>
                 </div>
                 <div
@@ -92,7 +93,7 @@ const DetailInfo = ({
                             </div>
                             <div className={cx("info_owner")}>
                                 <h3>{name_user}</h3>
-                                <span>{wallet_address}</span> <BiCopyAlt />
+                                <span>{wallet_address}</span> <IoCopyOutline />
                             </div>
                         </div>
                     </div>
@@ -111,15 +112,23 @@ const DetailInfo = ({
                             </div>
                             <div className={cx("info_owner")}>
                                 <h3>{name_creater}</h3>
-                                <span>{wallet_address}</span> <BiCopyAlt />
+                                <span>{wallet_address}</span> <IoCopyOutline />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className={cx("box_buy")}>
-                <Button className={cx("primary")}>{price_nft}ADA</Button>
-                <Button className={cx("primary")}>Buy</Button>
+                <div className={cx("button")}>
+                    <ButtonBorderLinear className="border_linear">
+                        {price_nft}ADA
+                    </ButtonBorderLinear>
+                </div>
+                <div className={cx("button")}>
+                    <ButtonBorderLinear className="background_linrear">
+                        BUY
+                    </ButtonBorderLinear>
+                </div>
             </div>
         </div>
     );

@@ -23,10 +23,22 @@ const cx = classNames.bind(styles);
 
 const NavBar = () => {
     const [openSibar, setOpenSibar] = useState(false);
+    const [openUser, setOpenUser] = useState(false);
+    const [openDropMenu, setOpenDropMenu] = useState(false);
 
+    const handleOpenUser = function () {
+        if (openSibar === true) {
+            setOpenSibar(false);
+        }
+        setOpenUser(!openUser);
+    };
     const handleOpenSibar = function () {
+        if (openUser === true) {
+            setOpenUser(false);
+        }
         setOpenSibar(!openSibar);
     };
+
     return (
         <div className={styles.container_navbar}>
             <div className={styles.container_logo}>
@@ -49,11 +61,8 @@ const NavBar = () => {
             </div>
 
             <div className={styles.container_list}>
-                <div className={styles.container_notify}>
-                    <Notify />
-                </div>
-                <div className={styles.container_user}>
-                    <User />
+                <div className={styles.container_user} onClick={handleOpenUser}>
+                    <User openUser={openUser} />
                 </div>
                 <div className={styles.container_wallet}>
                     <Wallet />

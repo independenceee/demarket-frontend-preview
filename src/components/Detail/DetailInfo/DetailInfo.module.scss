@@ -26,14 +26,18 @@
             .right {
                 display: flex;
                 width: 150px;
-                gap: 1px;
+                gap: 10px;
+                align-items: center;
                 span {
+                    display: flex;
+                    gap: 4px;
+                    align-items: center;
                     font-weight: 700;
                     font-size: var(--font_size_p);
                 }
             }
             .left {
-                width: 70%;
+                width: 100%;
                 align-items: center;
                 display: flex;
                 gap: 20px;
@@ -66,12 +70,12 @@
                     .info_owner {
                         padding: 10px;
                         h3 {
-                            font-size: 16px;
+                            font-size: 18px;
                             font-weight: 700;
                         }
                         span {
                             font-size: 12px;
-                            font-weight: normal;
+                            font-weight: 600;
                         }
                     }
                     .avatar {
@@ -97,8 +101,43 @@
         align-items: center;
         border-radius: 30px;
         border: 0.3px solid var(--gradient-purple-to-dark, #a511ca);
-        Button {
-            margin: 10px 10px;
+        .button {
+            height: 60px;
+            width: 40%;
+            margin: 10px;
+            font-size: var(--font_size_title);
+            @media screen and (max-width: 992px) {
+                width: 30%;
+            }
+            @media screen and (max-width: 768px) {
+                width: 40%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    .container {
+        .container_detail_info_general {
+            .container_detail_info_one_row {
+                h1 {
+                    font-size: 30px;
+                }
+                .right {
+                    span {
+                        font-size: 10px;
+                    }
+                }
+                .left {
+                    span:first-child {
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                    span:nth-child(2) {
+                        font-size: 10px;
+                        font-weight: 700;
+                    }
+                }
+            }
         }
     }
 }

@@ -20,7 +20,7 @@
         position: absolute;
         width: 200px;
         height: 150px;
-        top: 40px;
+        top: 54px;
         left: -10px;
         border: var(--border_input);
         border-radius: var(--border_radius_20);
@@ -35,12 +35,20 @@
                 background-color: var(--backgroundcolor_30);
             }
         }
+        @media screen and (max-width: 1200px) {
+            top: 42px;
+        }
     }
 }
 @media screen and (max-width: 992px) {
     .container_dropmenu {
         .box_dropmenu {
+            top: 100%;
+            width: calc(100% - 50px);
             position: static;
+            // position: absolute;
+            border: none;
+            border-radius: 10px;
         }
     }
 }

@@ -27,4 +27,21 @@
             }
         }
     }
+    @media screen and (max-width: 540px) {
+        font-size: 12px;
+        .container_info {
+            .container_row {
+                span:nth-child(2) {
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+                &:last-child {
+                    span {
+                        font-style: italic;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
 }

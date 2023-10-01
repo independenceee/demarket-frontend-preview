@@ -32,17 +32,14 @@ const Sidebar = ({}: SidebarProps) => {
                 <Link href={"/about"}>Contact</Link>
             </li>
             <DropMenu />
-            <div className={styles.container_list}>
-                <div className={styles.container_notify}>
-                    <Notify />
-                </div>
+            {/* <div className={styles.container_list}>
                 <div className={styles.container_user}>
                     <User />
                 </div>
                 <div className={styles.container_wallet}>
                     <Wallet />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
