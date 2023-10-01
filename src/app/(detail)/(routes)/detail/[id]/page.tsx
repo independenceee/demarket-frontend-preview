@@ -67,7 +67,7 @@ const DetaiNft = function () {
         <div className={cx("container")}>
             <div className={cx("detail_container")}>
                 {/* <h1>Detail NFT</h1> */}
-                <div className={cx("detai_left")}>
+                <div className={cx("detail_left")}>
                     <DetailNFT image_nft={product.image_nft} />
                 </div>
                 <div className={cx("detail_right")}>
