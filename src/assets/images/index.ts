@@ -67,6 +67,13 @@ const images = {
     User_5,
     User_6,
     User_7,
+
+    // wallet image => not edit
+    namiWallet: require("../images/wallets/nami.svg"),
+    flintWallet: require("../images/wallets/flint.svg"),
+    typhonWallet: require("../images/wallets/typhon.svg"),
+    eternlWallet: require("../images/wallets/eternl.webp"),
+    geroWallet: require("../images/wallets/gero.webp"),
 };
 
 export default images;
